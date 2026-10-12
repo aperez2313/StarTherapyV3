@@ -7,7 +7,7 @@ Last reviewed: October 11, 2026 (America/New_York).
 - Owner approved the first visual homepage increment with "OK make it so I can visually see."
 - Repository: aperez2313/StarTherapyV3. Current branch verified: feature/brand-v3-redesign.
 - Do not create another branch, modify main, push, merge, or deploy without owner authorization.
-- First homepage and media increments implemented locally. Owner authorized a local commit with "OK lets commit." Push, merge and deployment remain unauthorized.
+- First homepage and media increments committed as 2aaf713. Owner then requested a GitHub link for owner review; pushed the existing feature branch to origin. Merge and deployment remain unauthorized.
 - Added .gitignore to exclude every design-reference directory, including the nested handoff references.
 - Existing persistent instructions preserved at StarTherapy_Codex_Ready_Handoff/AGENTS.md and copied unchanged to root AGENTS.md for future sessions.
 
@@ -109,6 +109,8 @@ The user's request controls scope. The brand PDF controls visual identity, the o
 - Opened local index.html in Chrome for owner review. No preview server or deployment required. Full keyboard, screen-reader, menu-interaction, HTML-validation and broader performance QA remain before release.
 
 Next action: owner visual review of the local homepage; refine as requested. No pushing, merging or deploying without explicit approval.
+
+GitHub review link: https://github.com/aperez2313/StarTherapyV3/tree/feature/brand-v3-redesign . This displays source code, not a deployed preview. The GitHub Pages website remains unchanged. A separately approved preview deployment is needed for a shareable visual website review.
 
 ## Owner-supplied media increment
 
