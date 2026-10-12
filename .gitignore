@@ -1,0 +1,6 @@
+# Owner-provided references remain local, including nested handoff folders.
+design-reference/
+# Local handoff bundle; persistent instructions are preserved in root AGENTS.md.
+/StarTherapy_Codex_Ready_Handoff/
+# Original phone video remains local; the website uses the MP4 derivative.
+/IMG_2813.mov
