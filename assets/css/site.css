@@ -1,0 +1,129 @@
+/* Incremental Brand V3 refinements. Original tokens remain in index.html. */
+:root{--poppy-accessible:#C7443E;--tile-ink:#4B3223}
+html{scroll-padding-top:100px}
+body{overflow-wrap:break-word}
+h1{font-size:clamp(40px,4.8vw,56px);line-height:1.12}
+h2{font-size:clamp(28px,3vw,36px);line-height:1.25}
+.eyebrow{font:700 13px/1.5 "Source Sans 3",sans-serif;letter-spacing:.08em;color:var(--ink)}
+.skip-link{position:fixed;top:8px;left:8px;transform:translateY(-160%);z-index:100;background:var(--paper);padding:12px 20px;border:2px solid var(--ink);border-radius:6px}
+.skip-link:focus{transform:translateY(0)}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--cobalt);outline-offset:4px}
+.bar{min-height:86px;gap:18px}
+.logo{font-size:14px;line-height:1.35;letter-spacing:.06em}
+.desktop-nav{gap:20px}
+.btn{background:var(--poppy-accessible);min-height:48px;display:inline-flex;align-items:center;justify-content:center;line-height:1.3;text-align:center}
+.btn.alt{color:var(--ink);border-color:var(--bronze)}
+nav .btn{min-height:44px}
+.btn:hover{filter:none;background:#B83B35}
+.btn.alt:hover{background:var(--sand)}
+.hero{padding:80px 0}
+.hero .wrap{grid-template-columns:1.12fr .88fr;gap:60px}
+.hero-detail{max-width:520px;margin:18px 0 0}
+.hero-note{font-size:14px;margin:22px 0 0}
+.photo{aspect-ratio:1;align-content:center;gap:20px;border:1px solid var(--line);background:var(--sand);padding:36px}
+.photo-label{font:700 clamp(28px,3vw,38px)/1.2 "Quicksand",sans-serif;color:var(--ink)}
+.photo-caption{font-size:14px;line-height:1.7;color:var(--body)}
+.locations{padding:42px 0}
+.locations h2{font-size:28px}
+.chips{gap:10px}
+.chip{background:transparent;border:1px solid var(--line);border-radius:6px;padding:8px 12px;display:inline-flex;align-items:center;gap:9px;font-size:15px}
+.chip::before{content:"";width:14px;height:14px;border-radius:2px;background:var(--sky);flex:none}
+.location-note{max-width:920px;font-size:15px;margin:20px 0 0}
+.tile{aspect-ratio:1;min-height:0;padding:32px;gap:20px}
+.tile.sp{color:var(--tile-ink)}
+.tile h3{font-size:clamp(27px,3vw,32px);margin:0;max-width:350px}
+.tile .tag{font:700 18px "Source Sans 3",sans-serif;opacity:1}
+.tile p{font-size:17px;line-height:1.65}
+.tile-footer{font-size:14px;font-weight:600;padding-top:16px;border-top:1px solid currentColor}
+.section-intro{max-width:670px}
+.steps li::before{color:#15241A;font-weight:700}
+.steps li h3{font-size:21px}
+.steps li p{margin-bottom:0}
+.support-panels{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:24px}
+.support-panel{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:28px}
+.support-panel p:last-child{margin-bottom:0}
+.support-panel h3{font-size:23px;line-height:1.3}
+.funding-list{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0}
+.funding-list li{border:1px solid var(--line);border-radius:6px;padding:6px 10px;background:var(--sand);font-size:14px;font-weight:600}
+.smallprint{font-size:14px;line-height:1.65}
+.approach{display:grid;grid-template-columns:120px 1fr;gap:32px;align-items:center}
+.team-mark{aspect-ratio:1;border-radius:8px;background:var(--mustard);display:grid;place-items:center;color:var(--tile-ink);font:700 24px "Quicksand",sans-serif}
+.approach p{max-width:780px;margin:0}
+.contact{text-align:left;padding-bottom:80px}
+.contact-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:56px;align-items:start}
+.contact .lede{margin:0 0 24px;font-size:18px}
+address{font-style:normal;margin:30px 0 14px;line-height:1.8}
+address span{font-size:15px}
+.inquiry-card{padding:30px;background:var(--paper);border:1px solid var(--line);border-radius:12px}
+.inquiry-card h3{font-size:26px}
+.form-status{background:var(--sand);border-left:3px solid var(--bronze);padding:14px;font-size:15px}
+.form-status a{font-weight:700;text-underline-offset:3px}
+fieldset{border:0;padding:0;margin:22px 0 0;min-width:0}
+legend{font-size:14px;font-weight:600;margin-bottom:14px}
+label{display:block;font-size:15px;font-weight:600;margin:12px 0 6px;color:var(--ink)}
+label span{font-weight:400}
+input,select{width:100%;min-height:46px;border:1px solid #B9AA94;border-radius:6px;padding:10px 12px;background:var(--cream);color:var(--body);font:16px "Source Sans 3",sans-serif;opacity:1;-webkit-text-fill-color:var(--body)}
+input::placeholder{color:var(--body);opacity:1}
+.field-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.inquiry-card .btn{margin-top:22px;width:100%}
+.btn:disabled{background:#E9E2D8;color:var(--body);cursor:not-allowed}
+.inquiry-card .smallprint{margin:18px 0 0}
+.footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.footer-inner a{text-underline-offset:4px}
+.mobile-nav,.mobile-actions{display:none}
+@media(max-width:960px){
+  .desktop-nav{display:none}
+  .bar{justify-content:space-between;position:relative;min-height:76px}
+  .mobile-nav{display:block}
+  .mobile-nav summary{cursor:pointer;padding:10px 14px;border:1px solid var(--line);border-radius:6px;min-height:44px;font-weight:600;color:var(--ink)}
+  .mobile-nav nav{position:absolute;top:100%;left:16px;right:16px;display:flex;flex-direction:column;align-items:stretch;gap:0;padding:12px;background:var(--cream);border:1px solid var(--line);border-radius:8px;box-shadow:0 12px 24px rgba(107,82,46,.12)}
+  .mobile-nav nav a:not(.btn){display:block;padding:12px}
+  .hero .wrap{gap:32px}
+  .contact-grid{gap:32px}
+}
+@media(max-width:820px){
+  .hero .wrap,.tiles,.steps,.support-panels,.contact-grid{grid-template-columns:1fr}
+  .hero{padding:48px 0}
+  .hero .wrap{gap:36px}
+  .photo{aspect-ratio:16/10}
+  .tile{aspect-ratio:auto;min-height:340px}
+  .tile .tag{margin-bottom:24px}
+  .approach{grid-template-columns:80px 1fr;gap:20px}
+  .team-mark{font-size:18px}
+  .mobile-actions{position:fixed;bottom:0;left:0;right:0;z-index:20;display:flex;gap:10px;background:var(--cream);border-top:1px solid var(--line);padding:10px 16px calc(10px + env(safe-area-inset-bottom))}
+  .mobile-actions .btn{flex:1;padding:12px 10px;font-size:15px}
+  footer{padding-bottom:100px}
+  html{scroll-padding-bottom:100px}
+}
+@media(max-width:420px){
+  .wrap{padding:0 20px}
+  .bar{padding:10px 20px}
+  .hero .actions{flex-direction:column;align-items:stretch}
+  .photo{padding:24px}
+  .tile{padding:26px}
+  .approach{grid-template-columns:1fr}
+  .team-mark{width:72px}
+  .inquiry-card{padding:22px}
+  .field-row{grid-template-columns:1fr;gap:0}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+/* Owner-supplied assets: preserve original artwork and complete team composition. */
+.logo{display:block;width:230px;height:70px;overflow:hidden;flex:none}
+.logo img{display:block;width:230px;height:auto;transform:translateY(-28px)}
+.office-photo,.team-photo,.therapy-media figure{margin:0;min-width:0}
+.office-photo img{display:block;width:100%;height:440px;object-fit:cover;object-position:50% 60%;border-radius:8px}
+figcaption{font-size:14px;line-height:1.6;margin-top:12px;color:var(--body)}
+.therapy-media{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;margin-top:40px;padding-top:32px;border-top:1px solid var(--line)}
+.therapy-media h3{font-size:28px;line-height:1.3}
+.therapy-media video{display:block;width:100%;max-height:460px;border-radius:8px;background:var(--sand)}
+.therapy-media figure{width:100%;max-width:260px;justify-self:center}
+.therapy-media video{height:auto;aspect-ratio:9/16;object-fit:contain}
+.therapy-media figcaption a{text-underline-offset:3px}
+.approach{grid-template-columns:1fr 1fr;gap:48px}
+.team-photo{padding:12px;background:var(--mustard);border-radius:8px}
+.team-photo img{display:block;width:100%;height:auto;border-radius:4px}
+.team-photo figcaption{color:var(--tile-ink)}
+@media(max-width:960px){.logo{width:205px;height:64px}.logo img{width:205px;transform:translateY(-25px)}}
+@media(max-width:820px){.therapy-media,.approach{grid-template-columns:1fr;gap:24px}.office-photo img{height:360px}.team-photo{max-width:480px}}
+@media(max-width:420px){.logo{width:175px;height:55px}.logo img{width:175px;transform:translateY(-21px)}.office-photo img{height:320px}}
+@media(max-width:360px){.logo{width:145px;height:48px}.logo img{width:145px;transform:translateY(-17px)}.bar{gap:8px}}

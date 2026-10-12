@@ -4,6 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Star Therapy Solutions — Speech and OT in Miami Lakes</title>
+  <meta name="description" content="Pediatric speech-language and occupational therapy in Miami Lakes and participating Miami-Dade schools and daycares. Call 305-778-6144 to discuss next steps." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
@@ -82,48 +83,63 @@
       .photo{aspect-ratio:16/10}
     }
   </style>
+  <link rel="stylesheet" href="assets/css/site.css" />
 </head>
 <body>
+  <a class="skip-link" href="#top">Skip to main content</a>
   <header>
     <div class="bar">
       <a class="logo" href="#top" aria-label="Star Therapy Solutions home">
-        <svg viewBox="0 0 100 100" aria-hidden="true"><path fill="#89683A" d="M50 6 61 36 94 37 68 57 77 90 50 72 23 90 32 57 6 37 39 36z"/></svg>
-        <span>STAR THERAPY<br>SOLUTIONS</span>
+        <img src="startherapy.svg" alt="Star Therapy Solutions" width="1366" height="768" />
       </a>
-      <nav aria-label="Main">
+      <nav class="desktop-nav" aria-label="Main">
         <a href="#services">Services</a>
-        <a href="#how">How it works</a>
-        <a href="#team">Team</a>
+        <a href="#locations">Locations</a>
+        <a href="#how">Getting started</a>
+        <a href="#contact">Contact</a>
         <a class="btn" href="tel:3057786144">Call Victoria</a>
       </nav>
+      <details class="mobile-nav">
+        <summary>Menu <span aria-hidden="true">☰</span></summary>
+        <nav aria-label="Mobile navigation">
+          <a href="#services">Services</a><a href="#locations">Locations</a>
+          <a href="#how">Getting started</a><a href="#team">Our approach</a><a href="#contact">Contact</a>
+          <a class="btn" href="tel:3057786144">Call Victoria</a>
+        </nav>
+      </details>
     </div>
   </header>
 
   <main id="top">
-    <section class="hero">
+    <section class="hero" aria-labelledby="hero-title">
       <div class="wrap">
         <div>
-          <p class="eyebrow">Pediatric speech + occupational therapy</p>
-          <h1>Speech and OT, at school or in Miami Lakes.</h1>
-          <p class="lede">Play-based therapy for families who want a clear next step, not a brochure full of jargon.</p>
+          <p class="eyebrow">Pediatric therapy · Miami Lakes, Florida</p>
+          <h1 id="hero-title">Small steps.<br>Everyday possibilities.</h1>
+          <p class="lede">Speech-language and occupational therapy to support your child’s communication, confidence, and everyday skills.</p>
+          <p class="hero-detail">Individualized care at our Miami Lakes office and participating schools and daycare centers.</p>
           <div class="actions">
             <a class="btn" href="tel:3057786144">Call Victoria · 305-778-6144</a>
-            <a class="btn alt" href="#services">View services</a>
+            <a class="btn alt" href="#contact">Request Information</a>
           </div>
+          <p class="hero-note">Office visits by appointment · English &amp; Spanish</p>
         </div>
-        <div class="photo" role="img" aria-label="Placeholder for therapy photo">Therapy photo goes here<br>(8px corners, real room, real play)</div>
+        <figure class="office-photo"><img src="starTherapyOffice_.JPG" alt="Sunlit Star Therapy Solutions office with a child-sized table, therapy toys, and speech and occupational therapy artwork." width="1536" height="2048" fetchpriority="high" /><figcaption>A welcoming space in Miami Lakes · By appointment only</figcaption></figure>
       </div>
     </section>
 
-    <section class="alt-bg">
+    <section class="locations" id="locations" aria-labelledby="locations-title">
       <div class="wrap">
         <p class="eyebrow">Where we go</p>
-        <h2>We come to your child.</h2>
+        <h2 id="locations-title">Care close to your family.</h2>
         <div class="chips">
           <span class="chip">Miami Lakes</span>
           <span class="chip">Hialeah</span>
           <span class="chip">Palm Springs North</span>
+          <span class="chip">Hialeah Gardens</span>
+          <span class="chip">Miami Gardens</span>
         </div>
+        <p class="location-note">Serving surrounding Miami-Dade communities through our Miami Lakes office and participating public, private, and charter schools, preschools, and daycare centers. Services at individual facilities depend on arrangements and availability.</p>
       </div>
     </section>
 
@@ -134,53 +150,75 @@
         <div class="tiles">
           <article class="tile sp">
             <span class="tag">SP</span>
-            <h3>Speech pathology</h3>
-            <p>Play-based support for language, speech sounds, and connection.</p>
+            <h3>Speech-language therapy</h3>
+            <p>Support for understanding and expressing ideas, clearer speech, early language, social communication, fluency, and AAC.</p>
+            <span class="tile-footer">Individualized evaluation &amp; treatment</span>
           </article>
           <article class="tile ot">
             <span class="tag">OT</span>
             <h3>Occupational therapy</h3>
-            <p>Everyday skills, sensory needs, and school routines.</p>
+            <p>Support for fine motor skills, handwriting, sensory regulation, daily routines, motor planning, and functional feeding skills.</p>
+            <span class="tile-footer">Skills for everyday participation</span>
           </article>
         </div>
+        <div class="therapy-media"><div><p class="eyebrow">A look inside</p><h3>Skills practiced through everyday activities.</h3><p>Take a look at a therapy activity at Star Therapy Solutions. Each child’s treatment is individualized to their needs and goals.</p></div><figure><video controls playsinline preload="none" poster="assets/images/therapy-session-poster.jpg" width="720" height="1280" aria-label="Therapy activity at Star Therapy Solutions"><source src="assets/video/therapy-session.mp4" type="video/mp4" />Your browser cannot play this clip.</video><figcaption>Therapy in practice. <a href="assets/video/therapy-session.mp4">Open the therapy video</a>.</figcaption></figure></div>
       </div>
     </section>
 
     <section id="how" class="alt-bg">
       <div class="wrap">
-        <p class="eyebrow">How it works</p>
-        <h2>Three simple steps.</h2>
+        <p class="eyebrow">Getting started</p>
+        <h2>Let’s find your next step.</h2>
+        <p class="section-intro">Every family’s path is different. Contact us to discuss services, availability, and what comes next.</p>
         <ol class="steps">
-          <li><h3>School visit</h3><p>We meet your child where they learn and play.</p></li>
-          <li><h3>Miami Lakes office</h3><p>Continue sessions in our welcoming space.</p></li>
-          <li><h3>We handle insurance</h3><p>You focus on your child. We handle the paperwork.</p></li>
+          <li><h3>Start a conversation</h3><p>Call Victoria to ask about speech-language or occupational therapy.</p></li>
+          <li><h3>Explore your options</h3><p>Discuss service settings, availability, and insurance or funding verification.</p></li>
+          <li><h3>Discuss next steps</h3><p>The team can explain whether an evaluation or another next step is appropriate.</p></li>
         </ol>
+        <div class="support-panels">
+          <article class="support-panel"><p class="eyebrow">Between sessions</p><h3>Stay connected to your child’s progress.</h3><p>After every therapy session, families receive a detailed summary of skills practiced, progress toward goals, and practical strategies to use at home.</p></article>
+          <article class="support-panel" id="funding"><p class="eyebrow">Insurance &amp; funding</p><h3>Explore ways to access care.</h3><ul class="funding-list"><li>Private pay</li><li>Commercial insurance</li><li>Medicaid</li><li>FES-UA scholarship</li></ul><p class="smallprint">Plan participation, benefits, authorizations, scholarship eligibility, and available funds must be verified before services begin.</p></article>
+        </div>
       </div>
     </section>
 
     <section id="team">
       <div class="wrap">
         <p class="eyebrow">The team</p>
-        <h2>Meet your therapists.</h2>
-        <div class="team">
-          <div class="member"><div class="sq">Photo</div><h3>Victoria Perez</h3><p>Founder</p></div>
-          <div class="member"><div class="sq">Photo</div><h3>Therapist name</h3><p>Speech pathology</p></div>
-          <div class="member"><div class="sq">Photo</div><h3>Therapist name</h3><p>Occupational therapy</p></div>
-        </div>
+        <div class="approach"><figure class="team-photo"><img src="Team_StartTherapy.JPEG" alt="The Star Therapy Solutions team pictured together at the practice." width="1080" height="1350" loading="lazy" /><figcaption>The people behind Star Therapy Solutions</figcaption></figure><div><h2>Individualized care. Meaningful skills.</h2><p>Our practice works with speech-language pathologists, occupational therapists, and therapy assistants within their professional scopes and supervision requirements. Treatment focuses on skills that support participation at home, at school, and in everyday life.</p></div></div>
       </div>
     </section>
 
     <section class="contact" id="contact">
-      <div class="wrap">
+      <div class="wrap contact-grid">
+        <div>
         <p class="eyebrow">Get started</p>
         <h2>Ready for a clear next step?</h2>
-        <p class="lede">Call or message us and we will walk you through it.</p>
-        <a class="btn" href="tel:3057786144">Call Victoria</a>
-        <p class="meta">305-778-6144 · Instagram <strong>@startherapysolutions</strong></p>
+        <p class="lede">We’re here to help you understand your options. Call Victoria to ask about services and availability.</p>
+        <a class="btn" href="tel:3057786144">Call Victoria · 305-778-6144</a>
+        <address><strong>Miami Lakes office</strong><br>6625 Miami Lakes Drive East, Suite 234<br>Miami Lakes, FL 33014<br><span>By appointment only</span></address>
+        <p class="smallprint">Ask about English and Spanish language availability for your family.</p>
+        </div>
+        <div class="inquiry-card" aria-labelledby="inquiry-title">
+          <h3 id="inquiry-title">Request Information</h3>
+          <p class="form-status" id="inquiry-status">Online requests are not available yet. Please call <a href="tel:3057786144">305-778-6144</a> to get in touch.</p>
+          <div role="group" aria-describedby="inquiry-status privacy-note">
+            <fieldset disabled><legend>Contact form preview — not accepting information</legend>
+              <label for="adult-name">Your name</label><input id="adult-name" type="text" autocomplete="off" placeholder="Parent or caregiver name">
+              <label for="adult-phone">Phone number</label><input id="adult-phone" type="tel" autocomplete="off" placeholder="Your phone number">
+              <label for="adult-email">Email <span>(for email replies)</span></label><input id="adult-email" type="email" autocomplete="off" placeholder="Your email address">
+              <div class="field-row"><div><label for="contact-method">Contact preference</label><select id="contact-method"><option>Phone call</option><option>Email</option></select></div><div><label for="contact-language">Language preference</label><select id="contact-language"><option>No preference</option><option>English</option><option>Español</option></select></div></div>
+              <button class="btn" type="button" disabled>Request Information · Unavailable</button>
+            </fieldset>
+          </div>
+          <p class="smallprint" id="privacy-note">Do not provide a child’s personal or medical information. This preview cannot send or save information. An inquiry does not book an appointment. This website is not for emergencies.</p>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer>© Star Therapy Solutions · Miami Lakes, FL</footer>
+  <footer><div class="wrap footer-inner"><span>© Star Therapy Solutions · Miami Lakes, Florida</span><a href="tel:3057786144">305-778-6144</a><a href="#locations">Service locations</a></div></footer>
+  <div class="mobile-actions" aria-label="Quick contact"><a class="btn" href="tel:3057786144">Call Victoria</a><a class="btn alt" href="#contact">Request info</a></div>
+  <script src="assets/js/navigation.js"></script>
 </body>
 </html>
