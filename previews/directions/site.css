@@ -3,7 +3,7 @@
 html{scroll-behavior:smooth;color-scheme:light}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 body{margin:0;background:var(--page);color:var(--body);font:17px/1.6 var(--font-body);-webkit-font-smoothing:antialiased}
-img{max-width:100%;display:block}
+img{max-width:100%;height:auto;display:block}
 figure{margin:0}
 ol,ul{margin:0;padding:0;list-style:none}
 address{font-style:normal}
