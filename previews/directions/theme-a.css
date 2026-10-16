@@ -1,0 +1,19 @@
+/* Direction A · Warm — Fraunces headlines, blush/latte/rosewood lead, 2px on everything. Single light look by design. */
+:root{
+  --page:#FCF8F1; --alt:#F6ECE3; --panel:#F6ECE3; --card:#FFFDF9; --cta-bg:#FCF8F1;
+  --line:#EADBD0; --ink:#6B522E; --ink-deep:#3B2C17; --head:#6B522E; --body:#5C5144; --bronze:#89683A;
+  --link:#3F6CC4; --eyebrow:#3F6CC4; --nav:#6B522E;
+  --speech:#F2CEC3; --ot:#78A6EE; --loc:#CFEAE6; --loc-line:#9FD3CC; --team:#D9B68A; --prog:#9CC5A1; --prog-deep:#4E7A57; --fund:#E6D2F2;
+  --action:#8F5650; --on-tile:#3B2C17;
+  --font-head:'Fraunces',Georgia,serif; --font-body:'Public Sans',Arial,sans-serif; --font-btn:'Public Sans',Arial,sans-serif;
+  --head-weight:600; --head-track:-0.015em; --btn-weight:700; --eyebrow-track:.1em;
+  --r-btn:2px; --r-tile:2px; --r-photo:2px; --r-frame:0; --r-plate:2px; --r-card:2px; --r-num:2px; --r-chip:2px;
+  --outline:0 none; --shadow:none; --shadow-btn:none; --shadow-card:none; --shadow-photo:none;
+  --card-border:1px solid #EADBD0; --card-border-soft:0 none; --header-rule:1px solid #EADBD0;
+  --toggle-bg:transparent; --toggle-fg:#6B522E; --ghost-border:#6B522E;
+  --head-align:flex-start; --head-text:left; --chips-justify:flex-start;
+  --tile-align:flex-start; --tile-text:left; --tile-pad:36px; --tile-gap:20px;
+  --photo-frame:0 none; --photo-frame-bottom:0 none; --photo-frame-pad:0; --photo-ratio:4/3;
+  --footer-bg:#6B522E; --footer-fg:#FCF8F1;
+}
+.tile:hover{transform:translateY(-3px)}

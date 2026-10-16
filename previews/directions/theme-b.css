@@ -1,0 +1,29 @@
+/* Direction B · Gentle — Fredoka in periwinkle, golden spaced labels, rainbow arches on sharp bottoms. Single light look by design. */
+:root{
+  --page:#FCF8F1; --alt:#FBEEE8; --panel:#FCF8F1; --card:#FFFDF9; --cta-bg:#FBEEE8;
+  --line:#EADBD0; --ink:#3F6CC4; --ink-deep:#2E3F73; --head:#3F6CC4; --body:#5C5144; --bronze:#8A6A3A;
+  --link:#3F6CC4; --eyebrow:#8A6A3A; --nav:#3F6CC4;
+  --speech:#F2CEC3; --ot:#78A6EE; --loc:#CFEAE6; --loc-line:#9FD3CC; --team:#D9B68A; --prog:#9CC5A1; --prog-deep:#4E7A57; --fund:#E6D2F2;
+  --clay:#D9A890;
+  --action:#8F5650; --on-tile:#3B2C17;
+  --font-head:'Fredoka',Arial,sans-serif; --font-body:'Public Sans',Arial,sans-serif; --font-btn:'Fredoka',Arial,sans-serif;
+  --head-weight:600; --head-track:0; --btn-weight:600; --eyebrow-track:.22em;
+  --r-btn:2px; --r-tile:260px 260px 2px 2px; --r-photo:999px 999px 2px 2px; --r-frame:999px 999px 0 0; --r-plate:30px 30px 2px 2px; --r-card:2px; --r-num:23px 23px 2px 2px; --r-chip:18px 18px 2px 2px;
+  --outline:0 none; --shadow:none; --shadow-btn:none; --shadow-card:none; --shadow-photo:none;
+  --card-border:1px solid #EADBD0; --card-border-soft:1px solid #EADBD0; --header-rule:1px solid #EADBD0;
+  --toggle-bg:transparent; --toggle-fg:#3F6CC4; --ghost-border:#3F6CC4;
+  --head-align:center; --head-text:center; --chips-justify:center;
+  --tile-align:center; --tile-text:center; --tile-pad:96px 36px 40px; --tile-gap:24px;
+  --photo-frame:18px solid #D9A890; --photo-frame-bottom:0 none; --photo-frame-pad:12px 12px 0; --photo-ratio:4/5;
+  --footer-bg:#3F6CC4; --footer-fg:#FCF8F1;
+}
+.hero .stack{align-items:center;text-align:center}
+.hero .actions{justify-content:center}
+.hero .eyebrow{align-self:center}
+.page-hero .hero-grid .stack{align-items:flex-start}
+.hero-photo{max-width:440px;justify-self:center;width:100%}
+.tile .plate{margin-bottom:auto}
+.tile h3{font-size:30px}
+.steps .step{align-items:center;text-align:center}
+.cta h2{color:var(--head)}
+.notice{border-left-color:var(--clay)}
