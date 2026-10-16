@@ -1,0 +1,24 @@
+/* Direction C · Playful — Bricolage Grotesque, smiley-face pastels, 4px corners, 2px outlines and block shadows. Single light look by design. */
+:root{
+  --page:#FCF8F1; --alt:#FDF0E6; --panel:#FFFDF9; --card:#FFFDF9; --cta-bg:#E6D2F2;
+  --line:#E8CDBE; --ink:#3B2C17; --ink-deep:#3B2C17; --head:#3B2C17; --body:#5C5144; --bronze:#7A5C9E;
+  --link:#3F6CC4; --eyebrow:#3B2C17; --nav:#3B2C17;
+  --speech:#F2CEC3; --ot:#78A6EE; --loc:#CFEAE6; --loc-line:#3B2C17; --team:#D9B68A; --prog:#9CC5A1; --prog-deep:#4E7A57; --fund:#E6D2F2;
+  --action:#8F5650; --on-tile:#3B2C17;
+  --font-head:'Bricolage Grotesque',Arial,sans-serif; --font-body:'Public Sans',Arial,sans-serif; --font-btn:'Public Sans',Arial,sans-serif;
+  --head-weight:800; --head-track:-0.02em; --btn-weight:800; --eyebrow-track:.06em;
+  --r-btn:4px; --r-tile:4px; --r-photo:4px; --r-frame:0; --r-plate:4px; --r-card:4px; --r-num:4px; --r-chip:4px;
+  --outline:2px solid #3B2C17; --shadow:8px 8px 0 #3B2C17; --shadow-btn:4px 4px 0 #3B2C17; --shadow-card:5px 5px 0 #3B2C17; --shadow-photo:14px 14px 0 #D9B68A;
+  --card-border:2px solid #3B2C17; --card-border-soft:2px solid #3B2C17; --header-rule:2px solid #3B2C17;
+  --toggle-bg:#D9B68A; --toggle-fg:#3B2C17; --ghost-border:#3B2C17;
+  --head-align:flex-start; --head-text:left; --chips-justify:flex-start;
+  --tile-align:flex-start; --tile-text:left; --tile-pad:32px; --tile-gap:28px;
+  --photo-frame:0 none; --photo-frame-bottom:0 none; --photo-frame-pad:0 14px 14px 0; --photo-ratio:4/3;
+  --footer-bg:#3B2C17; --footer-fg:#FCF8F1;
+}
+.eyebrow{background:var(--fund);border:2px solid #3B2C17;border-radius:4px;padding:5px 10px}
+.btn.ghost{background:#FFFDF9}
+.btn:hover,.tile:hover{transform:translate(4px,4px);box-shadow:0 0 0 #3B2C17;filter:none}
+.area{border-top:2px solid #3B2C17;box-shadow:5px 5px 0 var(--stripe)}
+.notice{border:2px solid #3B2C17;border-radius:4px;background:#FDF0E6}
+.foot-logo{border-radius:4px}

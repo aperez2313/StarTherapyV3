@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Star Therapy Website Directions</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Fredoka:wght@600&family=Bricolage+Grotesque:opsz,wght@12..96,800&family=Public+Sans:wght@400;600;700&display=swap">
+<style>
+/* Layout: a quiet chooser page — one intro, three direction cards side by side, each previewing its own type and shape. Single light look by design. */
+:root{
+  --page:#FCF8F1; --ink:#6B522E; --deep:#3B2C17; --body:#5C5144; --line:#EADBD0; --card:#FFFDF9;
+  --blush:#F2CEC3; --peri:#78A6EE; --peri-deep:#3F6CC4; --mint:#CFEAE6; --latte:#D9B68A; --sage:#9CC5A1; --lav:#E6D2F2; --clay:#D9A890; --rose:#8F5650; --gold:#8A6A3A; --plum:#7A5C9E;
+  --sans:'Public Sans',Arial,sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--page);color:var(--body);font:16px/1.6 var(--sans);padding-inline:20px}
+.page{max-width:1180px;margin:0 auto;padding-block:48px 64px;display:flex;flex-direction:column;gap:40px}
+.intro{display:flex;flex-direction:column;gap:14px;max-width:70ch}
+.intro img{width:120px;height:auto}
+.kicker{font:700 13px/1.3 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--peri-deep)}
+h1{font:600 clamp(32px,4.4vw,52px)/1.05 'Fraunces',Georgia,serif;color:var(--ink);margin:0;text-wrap:balance;letter-spacing:-.015em}
+p{margin:0}
+.palette{display:flex;gap:6px;flex-wrap:wrap}
+.palette span{width:30px;height:30px;border-radius:2px;border:1px solid rgba(59,44,23,.12)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.dir{background:var(--card);border:1px solid var(--line);display:flex;flex-direction:column;gap:16px;padding:28px;min-width:0}
+.dir.a{border-radius:2px}
+.dir.b{border-radius:160px 160px 2px 2px;padding-top:64px}
+.dir.c{border:2px solid var(--deep);border-radius:4px;box-shadow:7px 7px 0 var(--deep)}
+.tag{font:700 12px/1.3 var(--sans);letter-spacing:.14em;text-transform:uppercase}
+.a .tag{color:var(--rose)} .b .tag{color:var(--gold)} .c .tag{color:var(--plum)}
+.sample{margin:0;line-height:1.02;text-wrap:balance}
+.a .sample{font:600 34px 'Fraunces',Georgia,serif;color:var(--ink)}
+.b .sample{font:600 34px 'Fredoka',Arial,sans-serif;color:var(--peri-deep)}
+.c .sample{font:800 34px 'Bricolage Grotesque',Arial,sans-serif;color:var(--deep);letter-spacing:-.02em}
+.dir .open{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--rose);color:#FFFEFC;font-weight:700;text-decoration:none;padding:14px 18px}
+.a .open{border-radius:2px} .b .open{border-radius:2px;font-family:'Fredoka',Arial,sans-serif;font-weight:600;font-size:17px}
+.c .open{border-radius:4px;border:2px solid var(--deep);box-shadow:4px 4px 0 var(--deep)}
+.open:focus-visible,.pages a:focus-visible{outline:3px solid var(--peri-deep);outline-offset:3px}
+.pages{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:14px}
+.pages a{color:var(--peri-deep);font-weight:600}
+.facts{font-size:14px;color:var(--body);display:grid;grid-template-columns:auto 1fr;gap:4px 12px}
+.facts dt{font-weight:700;color:var(--ink)} .facts dd{margin:0}
+.foot{border-top:1px solid var(--line);padding-top:20px;font-size:14px;display:flex;flex-direction:column;gap:6px;max-width:80ch}
+@media (max-width:900px){.cards{grid-template-columns:1fr}.dir.b{border-radius:120px 120px 2px 2px}}
+</style>
+</head>
+<body>
+
+<div class="page">
+  <header class="intro">
+    <img src="../../startherapy.svg" alt="Star Therapy Solutions" width="1366" height="768">
+    <p class="kicker">Website directions · for owner review</p>
+    <h1>Three ways the new Star Therapy website could look.</h1>
+    <p>Each direction is a clickable prototype with all eight pages: Home, Speech, Occupational therapy, Locations, Getting started, Insurance, About and Contact. They share the same words, photos and the owner’s new palette. Only the typeface, shapes and which colors lead are different. Use the bar at the top of any prototype to jump between A, B and C on the same page.</p>
+    <div class="palette" aria-label="Owner palette">
+      <span style="background:var(--blush)" title="Blush"></span><span style="background:var(--peri)" title="Periwinkle"></span><span style="background:var(--mint)" title="Mint"></span><span style="background:var(--latte)" title="Latte"></span><span style="background:var(--sage)" title="Sage"></span><span style="background:var(--lav)" title="Lavender"></span><span style="background:var(--clay)" title="Clay"></span><span style="background:var(--rose)" title="Rosewood"></span>
+    </div>
+  </header>
+
+  <div class="cards">
+    <article class="dir a">
+      <p class="tag">Direction A · Warm</p>
+      <p class="sample">Helping little stars reach their full potential.</p>
+      <dl class="facts"><dt>Type</dt><dd>Fraunces and Public Sans</dd><dt>Shape</dt><dd>Crisp 2px corners</dd><dt>Leads</dt><dd>Blush, latte, rosewood</dd><dt>Feels like</dt><dd>A trusted local practice</dd></dl>
+      <a class="open" href="a.html">Open Direction A →</a>
+      <nav class="pages" aria-label="Direction A pages"><a href="a.html#speech">Speech</a><a href="a.html#ot">OT</a><a href="a.html#locations">Locations</a><a href="a.html#start">Getting started</a><a href="a.html#funding">Insurance</a><a href="a.html#about">About</a><a href="a.html#contact">Contact</a></nav>
+    </article>
+    <article class="dir b">
+      <p class="tag">Direction B · Gentle</p>
+      <p class="sample">Speech and OT that comes to your child’s school.</p>
+      <dl class="facts"><dt>Type</dt><dd>Fredoka and Public Sans</dd><dt>Shape</dt><dd>Rainbow arches, sharp bottoms</dd><dt>Leads</dt><dd>Periwinkle, clay, blush</dd><dt>Feels like</dt><dd>The flyer, grown into a website</dd></dl>
+      <a class="open" href="b.html">Open Direction B →</a>
+      <nav class="pages" aria-label="Direction B pages"><a href="b.html#speech">Speech</a><a href="b.html#ot">OT</a><a href="b.html#locations">Locations</a><a href="b.html#start">Getting started</a><a href="b.html#funding">Insurance</a><a href="b.html#about">About</a><a href="b.html#contact">Contact</a></nav>
+    </article>
+    <article class="dir c">
+      <p class="tag">Direction C · Playful</p>
+      <p class="sample">Helping little stars reach their full potential.</p>
+      <dl class="facts"><dt>Type</dt><dd>Bricolage Grotesque and Public Sans</dd><dt>Shape</dt><dd>4px corners, outlines, block shadows</dd><dt>Leads</dt><dd>Lavender, mint, blush</dd><dt>Feels like</dt><dd>A bright playroom</dd></dl>
+      <a class="open" href="c.html">Open Direction C →</a>
+      <nav class="pages" aria-label="Direction C pages"><a href="c.html#speech">Speech</a><a href="c.html#ot">OT</a><a href="c.html#locations">Locations</a><a href="c.html#start">Getting started</a><a href="c.html#funding">Insurance</a><a href="c.html#about">About</a><a href="c.html#contact">Contact</a></nav>
+    </article>
+  </div>
+
+  <footer class="foot">
+    <p><strong>These are design prototypes, not the live website.</strong> Contact stays phone-only at (305) 788-6144, with no forms. Items in [square brackets], like the founder photo and office hours, are placeholders for the owner to supply.</p>
+    <p>Still to confirm: which pastel does which job, the real intake steps, and the phone number shown in the older brand guide (305-778-6144).</p>
+  </footer>
+</div>
+</body>
+</html>
