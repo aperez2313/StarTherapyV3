@@ -1,6 +1,6 @@
 # Star Therapy Solutions project status
 
-Last reviewed: October 11, 2026 (America/New_York).
+Last reviewed: October 12, 2026 (America/New_York).
 
 ## Authorization and repository state
 
@@ -120,3 +120,127 @@ GitHub review link: https://github.com/aperez2313/StarTherapyV3/tree/feature/bra
 - Therapy clip is placed below the two service tiles, with user-controlled playback and no autoplay. Created assets/video/therapy-session.mp4 (H.264/AAC, 720x1280, 4.37 seconds) and assets/images/therapy-session-poster.jpg. Original media preserved; source video location metadata omitted from the MP4. Playback downloads only when requested (preload="none").
 - Desktop and 390px mobile image placement visually inspected. Final Chrome checks at 1440px and 320px confirmed MP4 playback with advancing time and no video error; 320px document width equals viewport width (no horizontal overflow). JS syntax and diff whitespace checks passed. Reopened the finished local page in Chrome for owner review.
 - Website media are included in the owner-authorized local commit. Original MOV and handoff bundle remain local and ignored; root AGENTS.md preserves persistent context. Public release, including review of the client clip's publication authorization and any needed captions, remains part of the owner review before deployment.
+
+
+## October 12 owner revision round ? local, uncommitted
+
+The owner supplied explicit copy revisions. These override earlier generic copy and intake suggestions. Current branch remains feature/brand-v3-redesign; working tree was clean before editing. Do not commit, push, merge or deploy this round until explicitly authorized. Do not add the optional founder section.
+
+| Revision | Status | Files Modified | Notes |
+|---|---|---|---|
+| Homepage | Completed | index.html; assets/css/site.css | Exact new headline, subtitle and description; removed hero-detail paragraph. Original CTAs/photo preserved; balanced heading wrap and subtitle styles added. |
+| Where We Go | Completed | index.html | Exact new heading; all five service areas unchanged; participating settings clarified; availability caveat retained. |
+| Therapy Services | Pending content | index.html | Label updated to Our Therapy Services. No existing detail pages found. Owner will provide content or destinations; no fake Learn More links added. |
+| Therapy Video | Pending Asset | None | PENDING OWNER ASSET: Ashley clip featuring Mr. Potato Head. Existing section and media unchanged. |
+| Getting Started | Completed | index.html | All three exact step titles/descriptions applied; design preserved. |
+| Between Sessions | Completed | index.html | Exact owner-approved heading and description applied. |
+| Insurance | Partly completed; heading pending | index.html | Scholarship name spelled out; requested Commercial insurances/Medicaid insurances applied following instruction to follow the revision. Editorial wording remains flagged for owner review. Existing verification disclaimer unchanged. Insurance & Payment Options is proposed only; no heading substituted. |
+| Contact | Completed | index.html | Exact existing address preserved; By Appointment Only. notice retained; Maps search link added; supplied Instagram URL https://www.instagram.com/startherapyservices/ added. |
+
+QA: Chrome checked at 1440px desktop, 768px tablet, 390px and 320px mobile; no horizontal document overflow. Desktop and 320px hero screenshots visually reviewed; no forced heading line breaks. Static checks passed for unique IDs, anchor targets, asset existence, unchanged video markup, unchanged five areas, exact Maps query/address, unchanged insurance disclaimer, supplied Instagram URL and disabled inquiry controls. Google Maps URL returned HTTP 200. JavaScript syntax and git diff whitespace checks passed. No package.json/build/lint pipeline exists in this static project. Disabled inquiry controls are intentionally retained from the prior approved scope.
+
+Remaining owner input: (1) approved insurance section heading; (2) Learn More copy or valid destinations; (3) replacement Ashley/Mr. Potato Head video. Requested insurance terminology remains an editorial review item; no invented alternatives used. Preview by opening index.html in Chrome or via VS Code Live Server, then refresh.
+
+
+## Founder design preview and Instagram correction ? October 12
+
+- Latest owner instruction now explicitly authorizes the founder preview, superseding the earlier instruction to defer it. Keep prior owner revisions intact. No commit/push/merge/deployment authorized.
+- Added #founder immediately before unchanged #team. Used the exact supplied biography, name Victoria Perez, M.S., CCC-SLP, and title Founder & Speech-Language Pathologist. No extra credentials or language names inferred.
+- Two-column desktop layout; portrait left, biography right. Tablet/mobile stack vertically. Mustard frame and neutral 4:5 placeholder labeled Victoria Perez - Professional Photo Coming Soon. Preview only: do not publish with this placeholder.
+- Future photograph path: assets/images/victoria-perez.jpg. Replace only .founder-photo-placeholder with <img src="assets/images/victoria-perez.jpg" alt="Victoria Perez, founder and speech-language pathologist at Star Therapy Solutions" loading="lazy">. Existing .founder-portrait img CSS preserves natural proportions using width:100% and height:auto; no face cropping. Record actual intrinsic width/height when file arrives.
+- Optional LinkedIn position reserved in an HTML comment beneath credentials; no empty or fake anchor created. Use .founder-linkedin class when a supplied URL is added.
+- Corrected contact Instagram URL to https://www.instagram.com/startherapysolutions/; this supersedes the earlier supplied startherapyservices URL.
+- Modified index.html, assets/css/site.css and this status document only. Existing uncommitted revision changes preserved.
+- Chrome checks passed at 1440, 768, 390 and 320px: correct founder-to-team order, two desktop columns/one mobile column, correct Instagram URL, no horizontal overflow. Desktop and mobile screenshots visually reviewed; diff whitespace and JS syntax checks passed. Opened local index.html#founder in Chrome.
+- Needed: approved professional photograph. Optional future inputs: professional LinkedIn URL, why Victoria founded the practice, exact pediatric experience years, therapy languages, and a personal message to parents. None was invented.
+- Remaining owner-round items still pending: service Learn More content/destinations, insurance heading approval, Ashley/Mr. Potato Head replacement video.
+
+
+## Team photo frame revision — October 12
+
+Owner requested a different brand color in place of the yellow team photograph frame. Updated only .team-photo background to brand bronze #89683A and its caption to off-white #FCFAF7. This owner-directed exception supersedes the mustard team-frame guideline for this component. Image, layout and founder preview unchanged. Local changes only; no commit, push or deployment.
+
+
+## Minimal adult-contact preview ? October 12
+
+- Owner requested three fields based on a screenshot: parent name, email and phone. Updated index.html to show exactly those three adult-contact fields; removed contact/language preference selectors. Kept fieldset and button disabled, with no form transport, storage, backend or analytics added. Prior uncommitted founder/copy/color revisions preserved.
+- Added adult-only guidance and clarified that the disabled preview does not send/save entries; do not enter child identifiers, medical or insurance details. No HIPAA-compliant or legal-protection claim added. A disclaimer does not establish compliance or replace agreements/safeguards.
+- The screenshot describes identifiers in isolation; healthcare inquiry context can still make identifying information PHI. Production activation requires confirmation of HIPAA applicability, approved receiving provider and BAA where required, permissions/notification/retention review, appropriate privacy notices and compliance/legal review by the practice. No receiving provider is selected.
+- Static verification: exactly three inputs inside disabled fieldset; no clinical text area, selectors, form element, submission transport or storage code. Diff whitespace checks passed. No commit/push/deployment.
+- Reference: https://www.hhs.gov/hipaa/for-professionals/special-topics/de-identification/index.html and https://www.hhs.gov/hipaa/for-professionals/special-topics/health-information-technology/cloud-computing/index.html .
+
+
+## Preliminary website safety review ? October 12
+
+Read-only code audit of current local files: three disabled adult-contact inputs; no form element or submit control; navigation-only JavaScript; no submission endpoint, storage code, external JavaScript, analytics or ad pixels found in the reviewed HTML/JS/CSS. Local original SVG contains no matching script/event-handler/foreignObject/image/link references. This is not a compliance certification or full security assessment.
+
+External Google Fonts requests remain; review third-party request metadata and preferably self-host properly licensed fonts before activating inquiries. Maps/Instagram are outbound links rather than embeds and use noopener/noreferrer. No production server-header, hosting-log, browser-network or account-access review was performed in this audit.
+
+Release/activation items: confirm actual deployed revision and HTTPS/hosting controls; browser-network and storage tests with fictional data; approved receiving service and appropriate BAA if ePHI is handled; permissions/MFA/audit/retention/notification procedures; practice privacy notices and applicable legal review; publication authorization for team/client media; replace founder Coming Soon placeholder before release. Preserve disabled inquiry until these decisions are approved. No code changes, commits, pushes or deployments performed in this safety review.
+
+
+## Phone-only contact experience ? October 12
+
+Latest owner instruction removes all parent inquiry/contact forms. Removed three-field disabled preview and Request Information links; replaced navigation/hero/mobile actions with Call Now tel links and contact-details anchors. Contact heading and description use the supplied text; contact CTA is Call Star Therapy Solutions. Office/address/Maps/Instagram and all other sections preserved.
+
+Owner explicitly requested a placeholder instead of the previously listed number. All tel links now use +13055550100; visible number 305-555-0100 is labeled as a placeholder in contact/footer. Official business number must be supplied and substituted before public release. No website parent-contact/medical data collection or storage code exists. Phone provider handling remains outside the website. No claim of full HIPAA compliance or legal clearance.
+
+Changed index.html, assets/css/site.css and status documentation; prior owner revisions preserved. No commit, push, merge or deploy authorized. Static checks verified absence of form controls and inquiry CTAs, consistent placeholder tel links and valid anchors.
+
+
+## Approved limited V4 color update
+
+Owner approved adding id="hero" while retaining aria-labelledby="hero-title", changing speech/OT card colors and the call buttons. Applied to index.html and locally ignored preview-pastel.html, with shared assets/css/site.css. Speech #DDB9AD, OT #A9BFD8, existing dark tile ink #4B3223 retained for sufficient small-text contrast; primary call fill #263D35 uses the V4 accessibility example rather than the insufficient white/#617E73 pairing. Hover uses darker sage #1D3029. Other content/layout unchanged. Full V4 rollout is still pending approval. No commit/push/deployment. Hero labels/unique IDs and contrast calculations checked.
+
+
+## Separate V4 website option
+
+Owner requested another website option using the V4 deck. Created preview-v4.html and assets/css/preview-v4.css without modifying index.html or preview-pastel.html. HTML body is identical to the current homepage; all approved copy, assets, founder and phone-only contact preserved. Uses V4 warm ink/body, mint location chips, neutral service cards with blush/blue circles, sage progress/photo frames and accessible #263D35 call buttons. Preview includes noindex/nofollow only in its own head, not the homepage. Prior preview remains available.
+
+Chrome checked 1440/768/390/320px layouts: no horizontal overflow and no form fields; service and narrow contact screenshots visually inspected. Anchor/asset checks passed. Founder image and official phone are still pending; this remains a local design preview, not a compliance certification. No commit/push/deployment. Preview by opening preview-v4.html or Live Server.
+
+
+## V4 option: reduced green palette
+
+Owner requested replacing the multiple green tones. Changed only assets/css/preview-v4.css: bronze #6B522E calls with warm-brown hover, powder-blue location chips with dark #4B3223 labels, blush progress and photo frames, warm-brown focus/secondary actions. Existing V4 neutral backgrounds, service colors, content and homepage preserved. This owner-requested preview variation overrides the deck green category/action roles only in preview-v4.html. Text contrast calculations exceed 4.5:1; this does not certify ADA/WCAG conformance. No commit, push or deployment.
+
+
+## V4 location chip color variation
+
+Owner requested different V4 deck colors for the five location chips shown in the screenshot. Updated only preview-v4.css: Miami Lakes blush #DDB9AD; Hialeah powder blue #A9BFD8; Palm Springs North honey #D6B78E; Hialeah Gardens mint #C9DCD5; Miami Gardens sage #A8C5B3. Retained dark #4B3223 labels and all names/behavior/layout. All label contrast pairs exceed 4.5:1. This owner-selected variation overrides the deck single-mint location role in the separate preview; other page colors preserved. No commit/push/deploy.
+
+
+## Official business phone confirmed
+
+Owner supplied (305) 788-6144. Updated index.html, preview-pastel.html and preview-v4.html: readable number (305) 788-6144; all tel links use tel:+13057886144. Removed placeholder notices and associated aria-describedby references. This supersedes the earlier placeholder and old 305-778-6144 reference number. All 21 call links verified. No commit/push/deployment.
+
+
+## Company LinkedIn footer link
+
+Owner supplied https://www.linkedin.com/company/star-therapy-solutions/ . Added company LinkedIn and Instagram links together in a labeled footer social navigation on index.html, preview-pastel.html and preview-v4.html. Links open in a new tab with noopener/noreferrer and screen-reader notices. Company link does not substitute for Victoria's pending personal LinkedIn URL. Existing contact actions preserved. Shared footer CSS keeps social links visible on mobile despite primary-navigation hide rules. No commit/push/deployment.
+
+
+## Owner-supplied Instagram footer icon
+
+Copied the supplied official gradient SVG unchanged to assets/images/instagram-glyph-gradient.svg. Added 32px image alongside visible Instagram footer label on index.html and both previews, with empty alt to avoid repeating its accessible name, existing new-tab announcement and safe link attributes preserved. Image lazy-loaded; footer links retain at least 44px height. Source SVG contains an embedded raster and is approximately 10.9 MB; future lossless/visual-preserving delivery optimization may be useful, but original artwork is unchanged. LinkedIn remains a text link pending an official icon asset. No commit/push/deployment.
+
+
+## Black Instagram glyph
+
+Owner supplied the official black Instagram SVG following the gradient icon request. Replaced footer icon references on homepage and both previews with assets/images/instagram-glyph-black.svg, copied unchanged. Existing link, label, focus and dimensions preserved. Previous gradient file retained unused; no commit/push/deployment.
+
+
+## Official black LinkedIn footer icon
+
+Owner supplied InBug-Black.png. Copied unchanged to assets/images/linkedin-in-black.png and added beside the visible company LinkedIn label in the homepage and both previews. Existing profile URL, new-tab announcement and safe link attributes preserved; empty image alt prevents duplicate announcement. Shared 32px object-fit:contain styling preserves the mark and registered-trademark symbol without stretching or cropping; clickable area remains at least 44px high. No commit/push/deployment.
+
+
+## Icon-only footer social links
+
+Owner requested removing visible Instagram/LinkedIn footer text. Both social anchors now contain only the original icons; descriptive aria-labels retain company/platform names and new-tab announcements. Contact-section Instagram text is preserved. Shared 32px icons with 6px padding maintain 44x44px targets. Applied to homepage and both previews; no commit/push/deployment.
+
+## Owner palette and three website directions — October 15
+- Owner supplied a revised pastel palette (ABC blocks, smiley faces, stars, rainbow, her flyer) and asked to stick to it. Proposed tokens: cream #FCF8F1, blush #F2CEC3 (speech), periwinkle #78A6EE (OT; text uses #3F6CC4), mint #CFEAE6 (locations), latte #D9B68A (team), sage #9CC5A1 / #4E7A57 (progress), lavender #E6D2F2 (funding), clay #D9A890, rosewood #8F5650 (only action color, white text 5.8:1). Logo stays #89683A. Color-to-job mapping awaits owner confirmation.
+- Three clickable prototypes, all eight pages each: A · Warm (Fraunces, 2px corners), B · Gentle (Fredoka, rainbow arches, closest to the flyer), C · Playful (Bricolage Grotesque, outlines and block shadows).
+- Local preview: open previews/directions/index.html. Pages carry noindex; index.html and the live site are unchanged. Owner review link is the private Claude artifact (share it from its Share menu). Remove or keep the previews folder before any merge to main, since main publishes to GitHub Pages.
+- Open: owner's direction choice, color jobs, real intake sequence, phone 788 vs 778 in older brand guide, founder photo, office hours. No commit, push or deployment.
