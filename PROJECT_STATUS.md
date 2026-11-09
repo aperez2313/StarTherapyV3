@@ -262,3 +262,8 @@ Owner requested removing visible Instagram/LinkedIn footer text. Both social anc
 - Owner is adding pediatric physical therapy. New page `/physical-therapy/` with the owner-supplied intro and nine skill areas; third clay (`#D9A890`) service card on the homepage; hero now reads "Pediatric Speech, Occupational & Physical Therapy." Nav gained "Physical therapy" and collapses to the Menu button below 1200px.
 - Founder heading now "Victoria Perez, M.S. CCC-SLP" (comma removed) and role "Founder & Lead Speech-Language Pathologist" on Home and About.
 - Not extended to PT until the owner confirms: insurance/Medicaid/FES-UA coverage, PT/PTA staff roles on About, post-session summaries, and a PT evaluation description.
+
+## WCAG 2.1 AA audit — November 9
+- Audited all 10 pages: axe-core (WCAG 2.0/2.1 A and AA), 320px reflow, text spacing, keyboard focus, skip link, headings, landmarks, titles, link and image text.
+- Fixed: link/label blue `#3F6CC4` to `#3863B8` (contrast on sand), header width at 320px, Getting started heading order. Homepage office photo now shown uncropped (owner request).
+- Open: therapy video (4s, has an audio track) has no captions or transcript; owner to confirm whether it contains speech. A screen-reader pass (NVDA) and an accessibility statement page are still recommended. No tool can certify ADA compliance.

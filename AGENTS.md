@@ -18,7 +18,7 @@
 ## Brand: Direction A · Warm (owner-chosen, supersedes Brand V3 colors and fonts)
 - The owner replaced the V3 saturated palette with her pastel palette (October 2026) and chose Direction A (November 2026). Tokens live in `assets/css/site.css`; the V3 PDF still governs layout principles (quiet page, color in tiles, one action color) but not hex values or fonts.
 - Cream `#FCF8F1` page; sand `#F6ECE3` alternate sections; ink bronze `#6B522E` headlines; body `#5C5144`; logo bronze `#89683A` (no redrawing or recoloring); deep bronze `#3B2C17` for text on pastel tiles.
-- Blush `#F2CEC3` = speech; periwinkle `#78A6EE` = OT (tiles only; links and eyebrows use `#3F6CC4`); mint `#CFEAE6` = locations; latte `#D9B68A` = team; sage `#9CC5A1` / `#4E7A57` = progress; lavender `#E6D2F2` = funding; clay `#D9A890` = physical therapy; rosewood `#8F5650` = the only button color. Color-to-job mapping awaits owner confirmation.
+- Blush `#F2CEC3` = speech; periwinkle `#78A6EE` = OT (tiles only; links and eyebrows use `#3863B8`, 5.0:1 on sand); mint `#CFEAE6` = locations; latte `#D9B68A` = team; sage `#9CC5A1` / `#4E7A57` = progress; lavender `#E6D2F2` = funding; clay `#D9A890` = physical therapy; rosewood `#8F5650` = the only button color. Color-to-job mapping awaits owner confirmation.
 - White text only on rosewood or sage deep. Pastels always carry deep bronze text.
 - Fraunces 600 for headlines, Public Sans 400/600/700 for body and buttons. 2px corners on everything; nothing circular. Buttons are short, carry an icon plus label, and are the only rosewood element.
 - Icons: `assets/icons/icons.svg` sprite (24px grid, 2px stroke, square caps, mitered joins), always beside text and `aria-hidden`.
