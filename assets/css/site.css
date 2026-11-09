@@ -54,7 +54,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible,video:focus-visible{o
 .mobile-nav nav .btn{margin-top:16px}
 
 /* Buttons */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:13px 22px;background:var(--rose);color:#FFFEFC;font:700 16px/1.2 var(--text);text-decoration:none;border:0;border-radius:var(--r);transition:background .15s}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;white-space:nowrap;min-height:48px;padding:13px 22px;background:var(--rose);color:#FFFEFC;font:700 16px/1.2 var(--text);text-decoration:none;border:0;border-radius:var(--r);transition:background .15s}
 .btn:hover{background:var(--rose-hover)}
 .btn .icon{width:20px;height:20px}
 .btn.ghost{background:transparent;color:var(--ink);border:2px solid var(--ink);padding:11px 20px}
