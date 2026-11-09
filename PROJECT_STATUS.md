@@ -252,3 +252,8 @@ Owner requested removing visible Instagram/LinkedIn footer text. Both social anc
 - Homepage split into real pages: `/speech-therapy/`, `/occupational-therapy/`, `/locations/`, `/getting-started/`, `/insurance-funding/`, `/about/`, `/contact/`, plus `404.html`, `sitemap.xml`, `robots.txt`. Owner wording kept (hero title, contact heading, founder bio); facts from the business overview only.
 - `robots.txt` and the sitemap only take effect from a domain root; on `aperez2313.github.io/StarTherapyV3/` submit the sitemap in Search Console instead. Update both if a custom domain is added.
 - Still open: color-to-job confirmation, phone 788 vs 778, office hours, founder photo, real intake steps, privacy notice, Spanish pages. `previews/` stays until the merge, then is removed.
+
+## Cleanup after Direction A launch — November 8
+- PR #3 merged; Direction A is live. Removed `previews/directions/` (A/B/C comparison prototypes) and its robots.txt rule now that the owner has chosen. The prototypes remain viewable in git history and in the private Claude artifact.
+- Audit: every CSS class in `site.css` is used; all tracked images, video and `navigation.js` are referenced. The icon sprite keeps 11 spare icons (map, home, calendar, fluency, aac, pencil, sensory, feeding, clock, arrow, close) for future pages.
+- Local-only drafts (preview-v4, preview-pastel, gradient Instagram icon, Direction A handoff note) moved to the git-excluded `_local-archive/` folder rather than deleted.
