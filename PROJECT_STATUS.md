@@ -267,3 +267,4 @@ Owner requested removing visible Instagram/LinkedIn footer text. Both social anc
 - Audited all 10 pages: axe-core (WCAG 2.0/2.1 A and AA), 320px reflow, text spacing, keyboard focus, skip link, headings, landmarks, titles, link and image text.
 - Fixed: link/label blue `#3F6CC4` to `#3863B8` (contrast on sand), header width at 320px, Getting started heading order. Homepage office photo now shown uncropped (owner request).
 - Open: therapy video (4s, has an audio track) has no captions or transcript; owner to confirm whether it contains speech. A screen-reader pass (NVDA) and an accessibility statement page are still recommended. No tool can certify ADA compliance.
+- Founder photo supplied by owner: saved web-sized (900x1350, 75 KB) as `assets/images/victoria-perez.jpg`; replaces the placeholder on Home and About in a latte frame, full photo, descriptive alt text.
