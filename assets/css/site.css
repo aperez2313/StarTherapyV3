@@ -150,8 +150,9 @@ section{padding-block:76px}
 .footer-name{font:600 28px/1.15 var(--head);letter-spacing:-.015em}
 .footer-phone{font:600 20px var(--head)}
 .footer-social{display:flex;gap:12px}
-.footer-social a{display:inline-grid;place-items:center;width:44px;height:44px;background:var(--cream);border-radius:var(--r)}
-.social-icon{width:26px;height:26px;object-fit:contain}
+.footer-social a{display:inline-grid;place-items:center;width:44px;height:44px;border-radius:var(--r);transition:opacity .15s}
+.footer-social a:hover{opacity:.75}
+.social-icon{width:28px;height:28px;object-fit:contain;filter:invert(1)}
 
 /* Mobile call bar */
 .mobile-actions{display:none}
