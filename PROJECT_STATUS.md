@@ -244,3 +244,11 @@ Owner requested removing visible Instagram/LinkedIn footer text. Both social anc
 - Three clickable prototypes, all eight pages each: A · Warm (Fraunces, 2px corners), B · Gentle (Fredoka, rainbow arches, closest to the flyer), C · Playful (Bricolage Grotesque, outlines and block shadows).
 - Local preview: open previews/directions/index.html. Pages carry noindex; index.html and the live site are unchanged. Owner review link is the private Claude artifact (share it from its Share menu). Remove or keep the previews folder before any merge to main, since main publishes to GitHub Pages.
 - Open: owner's direction choice, color jobs, real intake sequence, phone 788 vs 778 in older brand guide, founder photo, office hours. No commit, push or deployment.
+
+## Direction A rollout — November 8
+- Owner chose Direction A · Warm. Checkpoint commit f2b0a55 saved the October owner-approved homepage first.
+- `assets/css/site.css` rewritten with Direction A tokens (owner pastel palette, Fraunces + Public Sans, 2px corners); the inline `<style>` in `index.html` is gone. `preview-v4.html` and the ignored `preview-pastel.html` also load `site.css`, so they no longer show their old look.
+- New icon sprite `assets/icons/icons.svg`.
+- Homepage split into real pages: `/speech-therapy/`, `/occupational-therapy/`, `/locations/`, `/getting-started/`, `/insurance-funding/`, `/about/`, `/contact/`, plus `404.html`, `sitemap.xml`, `robots.txt`. Owner wording kept (hero title, contact heading, founder bio); facts from the business overview only.
+- `robots.txt` and the sitemap only take effect from a domain root; on `aperez2313.github.io/StarTherapyV3/` submit the sitemap in Search Console instead. Update both if a custom domain is added.
+- Still open: color-to-job confirmation, phone 788 vs 778, office hours, founder photo, real intake steps, privacy notice, Spanish pages. `previews/` stays until the merge, then is removed.

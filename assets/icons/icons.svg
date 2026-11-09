@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+<!-- Star Therapy icon set: 24px grid, 2px stroke, square caps, mitered joins. Use as <svg class="icon"><use href=".../icons.svg#name"/></svg>. -->
+<symbol id="speech" viewBox="0 0 24 24"><path d="M3 4h18v12H9l-5 4v-4H3z M7 9h10 M7 12h6"/></symbol>
+<symbol id="ot" viewBox="0 0 24 24"><path d="M7 11V5 M10 11V3 M13 11V3 M16 11V5 M5 11h13v4l-3 6H8l-3-6z M18 13l3-3"/></symbol>
+<symbol id="pin" viewBox="0 0 24 24"><path d="M12 21s-7-7-7-12a7 7 0 0 1 14 0c0 5-7 12-7 12z M10 7h4v4h-4z"/></symbol>
+<symbol id="school" viewBox="0 0 24 24"><path d="M3 21h18 M5 21V10l7-5 7 5v11 M10 21v-5h4v5 M12 5V2h4"/></symbol>
+<symbol id="blocks" viewBox="0 0 24 24"><path d="M4 13h7v7H4z M13 13h7v7h-7z M8.5 4h7v7h-7z"/></symbol>
+<symbol id="office" viewBox="0 0 24 24"><path d="M5 21V3h14v18 M3 21h18 M9 7h2 M13 7h2 M9 11h2 M13 11h2 M10 21v-5h4v5"/></symbol>
+<symbol id="map" viewBox="0 0 24 24"><path d="M3 6l6-3 6 3 6-3v15l-6 3-6-3-6 3z M9 3v15 M15 6v15"/></symbol>
+<symbol id="team" viewBox="0 0 24 24"><path d="M9 11a3 3 0 1 0 0-6a3 3 0 0 0 0 6z M3 20v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2 M16 5a3 3 0 0 1 0 6 M21 20v-2a4 4 0 0 0-3-3.9"/></symbol>
+<symbol id="progress" viewBox="0 0 24 24"><path d="M3 20h5v-5h5v-5h5V5h3"/></symbol>
+<symbol id="evaluation" viewBox="0 0 24 24"><path d="M10 17a7 7 0 1 0 0-14a7 7 0 0 0 0 14z M15 15l6 6 M7 10l2 2 4-4"/></symbol>
+<symbol id="summary" viewBox="0 0 24 24"><path d="M6 4h12v17H6z M9 2h6v4H9z M9 10h6 M9 14h6 M9 18h3"/></symbol>
+<symbol id="home" viewBox="0 0 24 24"><path d="M3 11l9-7 9 7 M5 9v12h14V9 M10 21v-6h4v6"/></symbol>
+<symbol id="phone" viewBox="0 0 24 24"><path d="M5 3h4l2 5-3 2a11 11 0 0 0 6 6l2-3 5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2z"/></symbol>
+<symbol id="calendar" viewBox="0 0 24 24"><path d="M4 5h16v16H4z M4 10h16 M8 3v4 M16 3v4 M8 14h3v3H8z"/></symbol>
+<symbol id="shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z M9 12l2 2 4-4"/></symbol>
+<symbol id="medicaid" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z M12 8v8 M8 12h8"/></symbol>
+<symbol id="cap" viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5z M6 11v5c3 2 9 2 12 0v-5 M22 9v6"/></symbol>
+<symbol id="card" viewBox="0 0 24 24"><path d="M3 6h18v12H3z M3 10h18 M7 14h4"/></symbol>
+<symbol id="languages" viewBox="0 0 24 24"><path d="M3 4h11v8H7l-4 3z M17 9h4v10l-4-3h-7v-2"/></symbol>
+<symbol id="fluency" viewBox="0 0 24 24"><path d="M2 12h4l2-5 3 10 3-8 2 3h6"/></symbol>
+<symbol id="aac" viewBox="0 0 24 24"><path d="M5 3h14v18H5z M8 6h3v3H8z M13 6h3v3h-3z M8 11h3v3H8z M13 11h3v3h-3z M11 18h2"/></symbol>
+<symbol id="pencil" viewBox="0 0 24 24"><path d="M4 20l1-5L16 4l4 4L9 19z M13 7l4 4 M4 20h5"/></symbol>
+<symbol id="sensory" viewBox="0 0 24 24"><path d="M3 7c3-3 6 3 9 0s6 3 9 0 M3 12c3-3 6 3 9 0s6 3 9 0 M3 17c3-3 6 3 9 0s6 3 9 0"/></symbol>
+<symbol id="feeding" viewBox="0 0 24 24"><path d="M6 3v6a2 2 0 0 0 4 0V3 M8 11v10 M16 3c-2 0-3 3-3 6s1 3 3 3v9"/></symbol>
+<symbol id="clock" viewBox="0 0 24 24"><path d="M12 21a9 9 0 1 0 0-18a9 9 0 0 0 0 18z M12 7v5l3 3"/></symbol>
+<symbol id="arrow" viewBox="0 0 24 24"><path d="M4 12h15 M13 6l6 6-6 6"/></symbol>
+<symbol id="menu" viewBox="0 0 24 24"><path d="M3 6h18 M3 12h18 M3 18h18"/></symbol>
+<symbol id="close" viewBox="0 0 24 24"><path d="M5 5l14 14 M19 5L5 19"/></symbol>
+</svg>
