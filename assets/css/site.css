@@ -147,7 +147,8 @@ section{padding-block:76px}
 .footer-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:32px}
 .site-footer a{color:var(--cream)}
 .footer-links{display:flex;flex-direction:column;gap:6px}
-.footer-phone{font:600 26px var(--head)}
+.footer-name{font:600 28px/1.15 var(--head);letter-spacing:-.015em}
+.footer-phone{font:600 20px var(--head)}
 .footer-social{display:flex;gap:12px}
 .footer-social a{display:inline-grid;place-items:center;width:44px;height:44px;background:var(--cream);border-radius:var(--r)}
 .social-icon{width:26px;height:26px;object-fit:contain}
