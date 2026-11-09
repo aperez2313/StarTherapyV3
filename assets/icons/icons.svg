@@ -2,6 +2,7 @@
 <!-- Star Therapy icon set: 24px grid, 2px stroke, square caps, mitered joins. Use as <svg class="icon"><use href=".../icons.svg#name"/></svg>. -->
 <symbol id="speech" viewBox="0 0 24 24"><path d="M3 4h18v12H9l-5 4v-4H3z M7 9h10 M7 12h6"/></symbol>
 <symbol id="ot" viewBox="0 0 24 24"><path d="M7 11V5 M10 11V3 M13 11V3 M16 11V5 M5 11h13v4l-3 6H8l-3-6z M18 13l3-3"/></symbol>
+<symbol id="pt" viewBox="0 0 24 24"><path d="M13 6a2 2 0 1 0 0-4a2 2 0 0 0 0 4z M5 10l4-2h5l4 3 M11 8l-1 6l3 3v5 M10 14l-4 7"/></symbol>
 <symbol id="pin" viewBox="0 0 24 24"><path d="M12 21s-7-7-7-12a7 7 0 0 1 14 0c0 5-7 12-7 12z M10 7h4v4h-4z"/></symbol>
 <symbol id="school" viewBox="0 0 24 24"><path d="M3 21h18 M5 21V10l7-5 7 5v11 M10 21v-5h4v5 M12 5V2h4"/></symbol>
 <symbol id="blocks" viewBox="0 0 24 24"><path d="M4 13h7v7H4z M13 13h7v7h-7z M8.5 4h7v7h-7z"/></symbol>

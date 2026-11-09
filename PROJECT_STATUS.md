@@ -257,3 +257,8 @@ Owner requested removing visible Instagram/LinkedIn footer text. Both social anc
 - PR #3 merged; Direction A is live. Removed `previews/directions/` (A/B/C comparison prototypes) and its robots.txt rule now that the owner has chosen. The prototypes remain viewable in git history and in the private Claude artifact.
 - Audit: every CSS class in `site.css` is used; all tracked images, video and `navigation.js` are referenced. The icon sprite keeps 11 spare icons (map, home, calendar, fluency, aac, pencil, sensory, feeding, clock, arrow, close) for future pages.
 - Local-only drafts (preview-v4, preview-pastel, gradient Instagram icon, Direction A handoff note) moved to the git-excluded `_local-archive/` folder rather than deleted.
+
+## Physical therapy added — November 9
+- Owner is adding pediatric physical therapy. New page `/physical-therapy/` with the owner-supplied intro and nine skill areas; third clay (`#D9A890`) service card on the homepage; hero now reads "Pediatric Speech, Occupational & Physical Therapy." Nav gained "Physical therapy" and collapses to the Menu button below 1200px.
+- Founder heading now "Victoria Perez, M.S. CCC-SLP" (comma removed) and role "Founder & Lead Speech-Language Pathologist" on Home and About.
+- Not extended to PT until the owner confirms: insurance/Medicaid/FES-UA coverage, PT/PTA staff roles on About, post-session summaries, and a PT evaluation description.
