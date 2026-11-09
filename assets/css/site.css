@@ -1,6 +1,9 @@
 /* Star Therapy Solutions · Direction A (Warm)
    Owner palette (October 2026), Fraunces headlines, Public Sans text, 2px corners.
    Pastel tiles carry deep-bronze text; only rosewood and sage deep carry white text. */
+/* Fonts are self-hosted (SIL Open Font License, see assets/fonts/OFL-*.txt) so no visitor data goes to a font service. */
+@font-face{font-family:"Fraunces";font-style:normal;font-weight:600;font-display:swap;src:url("../fonts/fraunces-600-latin.woff2") format("woff2")}
+@font-face{font-family:"Public Sans";font-style:normal;font-weight:100 900;font-display:swap;src:url("../fonts/public-sans-latin.woff2") format("woff2")}
 :root{
   --cream:#FCF8F1; --sand:#F6ECE3; --card:#FFFDF9; --line:#EADBD0;
   --ink:#6B522E; --body:#5C5144; --logo:#89683A; --deep:#3B2C17;
@@ -192,3 +195,7 @@ section{padding-block:76px}
   .mobile-nav summary{padding:10px 12px}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+/* Privacy page and footer legal links */
+.legal > *{max-width:760px}
+.legal h3{margin-top:12px}
+.footer-legal{font-size:14px}

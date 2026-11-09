@@ -268,3 +268,7 @@ Owner requested removing visible Instagram/LinkedIn footer text. Both social anc
 - Fixed: link/label blue `#3F6CC4` to `#3863B8` (contrast on sand), header width at 320px, Getting started heading order. Homepage office photo now shown uncropped (owner request).
 - Open: therapy video (4s, has an audio track) has no captions or transcript; owner to confirm whether it contains speech. A screen-reader pass (NVDA) and an accessibility statement page are still recommended. No tool can certify ADA compliance.
 - Founder photo supplied by owner: saved web-sized (900x1350, 75 KB) as `assets/images/victoria-perez.jpg`; replaces the placeholder on Home and About in a latte frame, full photo, descriptive alt text.
+
+## Privacy page and self-hosted fonts — November 9
+- New `/privacy/` page: Notice of Privacy Practices (placeholder until the owner supplies the practice's HIPAA notice) and an owner-reviewed Website Privacy statement; footer links on every page. Published at the user's request with the notice placeholder visible; replace it and the "Last updated" date when the owner sends them.
+- Fonts now self-hosted in `assets/fonts/` (Fraunces 600, Public Sans variable, with OFL license files); Google Fonts removed, so the site makes no third-party requests.
