@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /previews/
+
+Sitemap: https://aperez2313.github.io/StarTherapyV3/sitemap.xml
