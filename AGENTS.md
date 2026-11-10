@@ -4,6 +4,7 @@
 - Repository: `https://github.com/aperez2313/StarTherapyV3`
 - Live website: `https://aperez2313.github.io/StarTherapyV3/`
 - CURRENT WORKING BRANCH: `feature/brand-v3-redesign` (already created and checked out in VS Code). DO NOT make another branch or modify `main` without explicit user approval.
+- Pages are generated: edit `tools/build-pages.mjs` (shared header, footer, call bar and every page's content) and run `node tools/build-pages.mjs .` from the repo root. Do not hand-edit the generated HTML, or the next run will overwrite it. Preview locally with `node tools/serve.mjs . 8123` at http://localhost:8123/StarTherapyV3/.
 - Site structure (Direction A, November 2026): static pages at `index.html` plus folder pages `speech-therapy/`, `occupational-therapy/`, `physical-therapy/`, `locations/`, `getting-started/`, `insurance-funding/`, `about/`, `contact/`, and `404.html`. Header, footer and mobile call bar are repeated in every page: change all of them together. Pages are plain HTML, never rendered by JavaScript. Use relative paths (the site lives under `/StarTherapyV3/`), except `404.html`, which uses `/StarTherapyV3/` absolute paths.
 - Owner review and testing before any merge/deployment. Never push or merge without permission.
 

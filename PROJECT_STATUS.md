@@ -272,3 +272,23 @@ Owner requested removing visible Instagram/LinkedIn footer text. Both social anc
 ## Privacy page and self-hosted fonts — November 9
 - New `/privacy/` page: Notice of Privacy Practices (placeholder until the owner supplies the practice's HIPAA notice) and an owner-reviewed Website Privacy statement; footer links on every page. Published at the user's request with the notice placeholder visible; replace it and the "Last updated" date when the owner sends them.
 - Fonts now self-hosted in `assets/fonts/` (Fraunces 600, Public Sans variable, with OFL license files); Google Fonts removed, so the site makes no third-party requests.
+
+## START HERE (handoff, November 9) — continuing in VS Code
+**State:** `main` = live site (https://aperez2313.github.io/StarTherapyV3/), last merged PR #10. Branch `feature/brand-v3-redesign` holds the same content. Work on the branch, open a PR into `main`, and merge only after the user approves.
+
+**How the site is built**
+- Every page comes from `tools/build-pages.mjs`. Edit content there, then `node tools/build-pages.mjs .` from the repo root. Do not hand-edit generated HTML.
+- Styles: `assets/css/site.css` (Direction A tokens at the top). Icons: `assets/icons/icons.svg`. Fonts: self-hosted in `assets/fonts/`.
+- Preview: `node tools/serve.mjs . 8123`, then http://localhost:8123/StarTherapyV3/
+- Review PDF screenshots: `node tools/capture-screenshots.mjs "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" <folder> https://aperez2313.github.io/StarTherapyV3/`
+- PRs: GitHub CLI is installed at `C:\Program Files\GitHub CLI\gh.exe` and signed in as aperez2313. On PowerShell 5.1, pass PR text with `--body-file`, not `--body`.
+
+**Open items (waiting on the owner)**
+1. Notice of Privacy Practices text and "Last updated" date for `/privacy/` (placeholder is live).
+2. Video captions: the 4-second therapy clip has audio; captions if speech, short description if not.
+3. Photo release on file for the child in the homepage photo.
+4. Phone 788 vs 778 (older brand guide), office hours, real intake steps.
+5. PT: insurance/Medicaid/FES-UA coverage, PT/PTA staff, session summaries.
+6. Color-to-job mapping confirmation.
+
+**Proposed, not started:** loading-screen intro (1.2s, once per visit, skippable, skipped with reduced motion); accessibility statement page; NVDA screen-reader pass.
