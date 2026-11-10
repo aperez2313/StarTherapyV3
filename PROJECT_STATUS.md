@@ -340,3 +340,11 @@ Owner requested removing visible Instagram/LinkedIn footer text. Both social anc
 - Owner requested rounder buttons; preview now uses fully rounded pill corners instead of 12px.
 
 - Owner approved this preview batch with ok push, following the established push-and-publish workflow. Publishing rounded buttons, larger logo, seamless sticky header, footer styling, and logo sharing metadata.
+
+- Owner requested removal of the visible video caption. Removed Therapy in practice, retained the video action button, native controls, and existing accessible video label. Pending publication.
+
+## November 9, 2026 — approved accessibility remediation and publication
+- Owner approved audit fixes and explicitly requested Push site to share the live website with the owner for revision.
+- Added two-color focus outlines, wrapping buttons, a responsive two-column contact bar, measured header/bar clearances, and a scrollable height-limited menu.
+- Retested keyboard navigation at 320x600: final menu call link now visible above the contact bar. Media-content and assistive-technology verification remain open; no WCAG conformance claim.
+- Includes pending video-caption removal, preserving the accessible video label and action button.

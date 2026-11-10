@@ -178,7 +178,7 @@ const pages = [
     <section aria-labelledby="inside-title">
       <div class="wrap media">
         <div class="stack"><p class="eyebrow">A look inside</p><h2 id="inside-title">Skills practiced through everyday activities.</h2><p class="lede">Take a look at a therapy activity at Star Therapy Solutions. Each child’s treatment is individualized to their needs and goals.</p></div>
-        <figure><video controls playsinline preload="none" poster="assets/images/therapy-session-poster.jpg" width="720" height="1280" aria-label="Therapy activity at Star Therapy Solutions"><source src="assets/video/therapy-session.mp4" type="video/mp4">Your browser cannot play this clip.</video><figcaption>Therapy in practice. <a class="btn" href="assets/video/therapy-session.mp4">${c.icon('arrow')}<span>Open the therapy video</span></a></figcaption></figure>
+        <figure><video controls playsinline preload="none" poster="assets/images/therapy-session-poster.jpg" width="720" height="1280" aria-label="Therapy activity at Star Therapy Solutions"><source src="assets/video/therapy-session.mp4" type="video/mp4">Your browser cannot play this clip.</video><div class="actions"><a class="btn" href="assets/video/therapy-session.mp4">${c.icon('arrow')}<span>Open the therapy video</span></a></div></figure>
       </div>
     </section>
 
