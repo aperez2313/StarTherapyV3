@@ -292,3 +292,36 @@ Owner requested removing visible Instagram/LinkedIn footer text. Both social anc
 6. Color-to-job mapping confirmation.
 
 **Proposed, not started:** loading-screen intro (1.2s, once per visit, skippable, skipped with reduced motion); accessibility statement page; NVDA screen-reader pass.
+
+## November 9, 2026 — owner proofreading updates
+- Owner corrected the phone number to (305) 778-6144 (tel:+13057786144), superseding all historical phone-number notes above.
+- Shared desktop/mobile menu and footer labels now use Speech Therapy, Occupational Therapy, Physical Therapy, and Getting Started.
+- Updated the generator and regenerated every page, including metadata and the 404 page. Prepared locally for review; not pushed or deployed.
+
+## November 9, 2026 — additional proofreading updates
+- Added the supplied October 14, 2026 Notice of Privacy Practices in full, plus the original Word download. Preserved the supplied wording and line breaks, with semantic section headings and a static acknowledgment section.
+- Replaced the clinical-team paragraph with the owner's supplied wording, including physical therapy.
+- Proofread the shared address; wording is correct. Put By appointment only on its own line for readability.
+- Local proof only; publishing remains pending owner approval.
+
+## November 9, 2026 — contact buttons
+- Converted Google Maps, Instagram and LinkedIn links on Contact to the existing rosewood button style. Kept social destinations and new-tab accessibility notices.
+- Maps query now includes Star Therapy Solutions and the full office address; shared Locations map link uses the same destination.
+- Prepared for local owner review; not published.
+- Verified the Google Maps business listing in-browser against its name, office address and corrected phone number. Replaced the search URL with the verified direct place URL.
+
+- Owner requested the existing Instagram and LinkedIn brand logos in the Contact buttons; reused the footer assets with decorative empty alt text and retained the button labels and destinations.
+
+- Owner removed the service-specific qualifier from the Insurance and Funding private-pay card. It now reads: Families may choose to pay privately.
+
+## November 9, 2026 — complete site proofreading
+- Reviewed Home, Speech Therapy, Occupational Therapy, Physical Therapy, Locations, Getting Started, Insurance and Funding, About, Contact, Privacy, and the 404 page, including shared navigation, footer, captions and metadata.
+- Standardized list punctuation and founder credential punctuation; improved service introductions and movement descriptions; expanded AAC; aligned the Contact introduction with all three services; clarified the full FES-UA name; matched the Contact heading to the shared call-to-action.
+- Removed the Website Privacy date placeholder and clarified its data-collection wording to agree with its existing hosting-information disclosure. The supplied HIPAA notice was not rewritten.
+- Verified every one of the 52 nonempty Word notice paragraphs appears unchanged on the page; original Word download remains identical.
+- Verified all 11 generated pages, local link targets and telephone destinations, and checked for stale numbers, date placeholders and duplicated punctuation.
+- All revisions remain local and pending owner completion and publishing approval.
+
+## November 9, 2026 — publishing approval
+- Owner approved the standalone action-button preview and instructed: ok pushg. Authorized publishing all accumulated reviewed revisions.
+- Action links use existing rosewood buttons; navigation and footer links retain their established style.

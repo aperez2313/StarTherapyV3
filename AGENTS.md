@@ -35,7 +35,7 @@
 - No invented staff names/credentials, testimonials, service availability, locations, outcomes or prices.
 
 ## Scope and healthcare privacy
-- Current contact direction: phone-only; official owner-confirmed number `(305) 788-6144`, linked as `tel:+13057886144`. Use prominent 'Call Now' actions and readable phone text. All inquiry/contact forms were removed by owner request; do not reintroduce them without explicit approval.
+- Current contact direction: phone-only; official owner-confirmed number `(305) 778-6144`, linked as `tel:+13057786144`. Use prominent 'Call Now' actions and readable phone text. All inquiry/contact forms were removed by owner request; do not reintroduce them without explicit approval.
 - Do NOT enable form submission or connect mailto, unreviewed form handlers, analytics, ad pixels or third-party scripts to inquiry data. Contact information in healthcare context might be PHI; vendor, privacy, access-control and BAA decisions need separate owner review.
 - No child's personal or medical details; no free-text clinical field. No auto-marketing signup from an inquiry.
 - No `noindex` from prototype on production site. Preserve existing approved logo/images only; placeholders must be clearly indicated.

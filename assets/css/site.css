@@ -96,6 +96,9 @@ section{padding-block:76px}
 .tile:hover{transform:translateY(-3px)}
 .tile h3{font-size:clamp(24px,2.6vw,30px);color:var(--deep)}
 .tile .more{font-weight:700;margin-top:4px}
+.tile .btn.more{align-self:flex-start;white-space:normal;text-align:center;max-width:100%}
+.download-notice{white-space:normal;max-width:100%;text-align:center}
+.panel .btn{align-self:flex-start;white-space:normal}
 .tile.speech{background:var(--blush)}
 .tile.ot{background:var(--peri)}
 .tile.pt{background:var(--clay)}
@@ -156,6 +159,7 @@ section{padding-block:76px}
 .footer-social a{display:inline-grid;place-items:center;width:44px;height:44px;border-radius:var(--r);transition:opacity .15s}
 .footer-social a:hover{opacity:.75}
 .social-icon{width:28px;height:28px;object-fit:contain;filter:invert(1)}
+.btn .social-icon{width:20px;height:20px;flex-shrink:0}
 
 /* Mobile call bar */
 .mobile-actions{display:none}
@@ -196,6 +200,6 @@ section{padding-block:76px}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 /* Privacy page and footer legal links */
-.legal > *{max-width:760px}
+.legal > *{max-width:760px;overflow-wrap:anywhere}
 .legal h3{margin-top:12px}
 .footer-legal{font-size:14px}
