@@ -358,3 +358,6 @@ Owner requested removing visible Instagram/LinkedIn footer text. Both social anc
 
 - Owner supplied a two-column dropdown reference. Recreated the pattern in Star Therapy branding: pastel icon squares, bronze headings, concise descriptions, cream panel and selected trigger styling. Services and Getting Started use grouped two-column panels; mobile links remain unchanged. Verified keyboard Escape and panel fit at 1181px. Preview only.
 Owner approved removing the public acknowledgment/signature section. The downloadable document remains unchanged. Local preview only.
+
+## November 10, 2026 — video button spacing
+- Added 16px between the homepage video and its action button following owner screenshot feedback. Local preview, not published.
