@@ -325,3 +325,26 @@ Owner requested removing visible Instagram/LinkedIn footer text. Both social anc
 ## November 9, 2026 — publishing approval
 - Owner approved the standalone action-button preview and instructed: ok pushg. Authorized publishing all accumulated reviewed revisions.
 - Action links use existing rosewood buttons; navigation and footer links retain their established style.
+
+## November 9, 2026 — sharing image and footer preview
+- Owner selected the existing Star Therapy logo for text-message link previews. Added a cream-background PNG and static Open Graph/Twitter metadata to all 11 pages.
+- Footer links now omit permanent underlines; hover and keyboard focus retain underline feedback.
+- Prepared locally for review; these changes have not been published.
+
+- Owner requested a seamless sticky header. Removed the header divider and translucent blur; matched the page's cream background while preserving sticky positioning and stacking order. Local preview pending publishing approval.
+
+- Enlarged the header logo from 200px to 260px, with responsive 210px and 185px sizes on small phones. Increased header height to fit and adjusted the navigation breakpoint to avoid crowding. Local preview only.
+
+- Owner requested a rounded-button comparison. Preview uses 12px button corners, including service-card actions. Other card corners remain unchanged. Pending owner review.
+
+- Owner requested rounder buttons; preview now uses fully rounded pill corners instead of 12px.
+
+- Owner approved this preview batch with ok push, following the established push-and-publish workflow. Publishing rounded buttons, larger logo, seamless sticky header, footer styling, and logo sharing metadata.
+
+- Owner requested removal of the visible video caption. Removed Therapy in practice, retained the video action button, native controls, and existing accessible video label. Pending publication.
+
+## November 9, 2026 — approved accessibility remediation and publication
+- Owner approved audit fixes and explicitly requested Push site to share the live website with the owner for revision.
+- Added two-color focus outlines, wrapping buttons, a responsive two-column contact bar, measured header/bar clearances, and a scrollable height-limited menu.
+- Retested keyboard navigation at 320x600: final menu call link now visible above the contact bar. Media-content and assistive-technology verification remain open; no WCAG conformance claim.
+- Includes pending video-caption removal, preserving the accessible video label and action button.

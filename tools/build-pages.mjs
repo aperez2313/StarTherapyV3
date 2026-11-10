@@ -41,6 +41,21 @@ function build(page) {
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>${page.title}</title>
   <meta name="description" content="${page.description}">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Star Therapy Solutions">
+  <meta property="og:title" content="${page.title}">
+  <meta property="og:description" content="${page.description}">
+  <meta property="og:url" content="https://aperez2313.github.io/StarTherapyV3/${page.slug === '404' ? '404.html' : page.slug ? page.slug + '/' : ''}">
+  <meta property="og:image" content="https://aperez2313.github.io/StarTherapyV3/assets/images/star-therapy-share-logo.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1100">
+  <meta property="og:image:height" content="578">
+  <meta property="og:image:alt" content="Star Therapy Solutions logo on a cream background">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="${page.title}">
+  <meta name="twitter:description" content="${page.description}">
+  <meta name="twitter:image" content="https://aperez2313.github.io/StarTherapyV3/assets/images/star-therapy-share-logo.png">
+  <meta name="twitter:image:alt" content="Star Therapy Solutions logo on a cream background">
   <link rel="icon" href="${p}startherapy.svg" type="image/svg+xml">
   <link rel="preload" href="${p}assets/fonts/fraunces-600-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="${p}assets/css/site.css">
@@ -163,7 +178,7 @@ const pages = [
     <section aria-labelledby="inside-title">
       <div class="wrap media">
         <div class="stack"><p class="eyebrow">A look inside</p><h2 id="inside-title">Skills practiced through everyday activities.</h2><p class="lede">Take a look at a therapy activity at Star Therapy Solutions. Each child’s treatment is individualized to their needs and goals.</p></div>
-        <figure><video controls playsinline preload="none" poster="assets/images/therapy-session-poster.jpg" width="720" height="1280" aria-label="Therapy activity at Star Therapy Solutions"><source src="assets/video/therapy-session.mp4" type="video/mp4">Your browser cannot play this clip.</video><figcaption>Therapy in practice. <a class="btn" href="assets/video/therapy-session.mp4">${c.icon('arrow')}<span>Open the therapy video</span></a></figcaption></figure>
+        <figure><video controls playsinline preload="none" poster="assets/images/therapy-session-poster.jpg" width="720" height="1280" aria-label="Therapy activity at Star Therapy Solutions"><source src="assets/video/therapy-session.mp4" type="video/mp4">Your browser cannot play this clip.</video><div class="actions"><a class="btn" href="assets/video/therapy-session.mp4">${c.icon('arrow')}<span>Open the therapy video</span></a></div></figure>
       </div>
     </section>
 
