@@ -34,6 +34,32 @@ function build(page) {
   const navLinks = NAV.map(([slug, label, color]) =>
     `<a href="${link(slug)}" style="--cur:${color}"${page.slug === slug ? ' aria-current="page"' : ''}>${label}</a>`).join('\n        ');
   const footerLinks = NAV.map(([slug, label]) => `<a href="${link(slug)}">${label}</a>`).join('');
+  const desktopLink = (slug, label) => `<a href="${link(slug)}"${page.slug === slug ? ' aria-current="page"' : ''}>${label}</a>`;
+  const megaItem = ([slug, name, glyph, color, description]) => `<a class="mega-link" href="${link(slug)}"${page.slug === slug ? ' aria-current="page"' : ''}><span class="mega-icon" style="background:var(--${color})">${icon(glyph)}</span><span><span class="mega-name">${name}</span><span class="mega-description">${description}</span></span></a>`;
+  const dropdown = (label, columns) => `<details class="nav-group"><summary>${label}<svg class="nav-chevron" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="m4 6 4 4 4-4"/></svg></summary><div class="nav-dropdown mega-menu">${columns.map(([heading, items]) => `<div class="mega-column"><p class="mega-heading">${heading}</p>${items.map(megaItem).join('')}</div>`).join('')}</div></details>`;
+  const servicesMenu = dropdown('Services', [
+    ['Therapy for your child', [
+      ['speech-therapy', 'Speech Therapy', 'speech', 'blush', 'Communication and language skills'],
+      ['occupational-therapy', 'Occupational Therapy', 'ot', 'peri', 'Skills for everyday activities'],
+      ['physical-therapy', 'Physical Therapy', 'pt', 'clay', 'Movement, balance, and mobility'],
+    ]],
+    ['Explore care with us', [
+      ['locations', 'Where We Work', 'map', 'mint', 'Schools, daycares, and our office'],
+      ['about', 'Meet Our Team', 'team', 'latte', 'The people behind Star Therapy'],
+      ['getting-started', 'Getting Started', 'progress', 'sage', 'Find your family’s next step'],
+    ]],
+  ]);
+  const gettingStartedMenu = dropdown('Getting Started', [
+    ['Take the first step', [
+      ['getting-started', 'Getting Started', 'progress', 'sage', 'Learn what comes next'],
+      ['contact', 'Contact Our Team', 'phone', 'blush', 'Call to discuss your child’s needs'],
+    ]],
+    ['Plan your care', [
+      ['insurance-funding', 'Insurance and Funding', 'shield', 'lavender', 'Explore payment and funding options'],
+      ['locations', 'Service Locations', 'map', 'mint', 'Find out where we provide therapy'],
+    ]],
+  ]);
+  const desktopLinks = servicesMenu + desktopLink('locations', 'Locations') + gettingStartedMenu + desktopLink('about', 'About') + desktopLink('contact', 'Contact');
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -66,7 +92,7 @@ function build(page) {
     <div class="wrap bar">
       <a class="logo" href="${p || './'}" aria-label="Star Therapy Solutions home"><img src="${p}startherapy.svg" alt="Star Therapy Solutions" width="1366" height="768"></a>
       <nav class="desktop-nav" aria-label="Main">
-        ${navLinks}
+        ${desktopLinks}
         ${call()}
       </nav>
       <details class="mobile-nav">
@@ -507,16 +533,6 @@ ${callSection(c)}`,
         <h3>7 | Questions or complaints</h3>
         <p>Star Therapy Solutions, LLC  |  Attention: Privacy Officer<br>6625 Miami Lakes Drive East, Suite 234, Miami Lakes, FL 33014<br>Phone: 305-778-6144  |  Email: startherapysolutions@gmail.com</p>
         <p>You may also complain to the U.S. Department of Health and Human Services, Office for Civil Rights, 200 Independence Avenue SW, Washington, DC 20201; 1-877-696-6775; https://www.hhs.gov/hipaa/filing-a-complaint/index.html. We will not retaliate for filing a complaint.</p>
-        <h3>Acknowledgment of Receipt</h3>
-        <p>Notice of Privacy Practices  |  Star Therapy Solutions, LLC</p>
-        <p>I acknowledge that I have received a copy of Star Therapy Solutions, LLC’s Notice of Privacy Practices, effective October 14, 2026. My signature confirms receipt only. It does not constitute consent to treatment or authorization for uses or disclosures that separately require permission.</p>
-        <p>Child’s full name: __________________________________________________________</p>
-        <p>Parent/legal guardian name: __________________________________________________</p>
-        <p>Relationship to child: ________________________________________________________</p>
-        <p>Signature: ________________________________________   Date: ____________________</p>
-        <p>If acknowledgment cannot be obtained, practice staff may document the good-faith attempt and reason below.</p>
-        <p>Staff notes (if applicable): ______________________________________________________<br>___________________________________________________________________________</p>
-        <p>Star Therapy Solutions, LLC  |  305-778-6144  |  Fax: 305-280-4606<br>startherapysolutions@gmail.com</p>
       </div>
     </section>
 

@@ -348,3 +348,13 @@ Owner requested removing visible Instagram/LinkedIn footer text. Both social anc
 - Added two-color focus outlines, wrapping buttons, a responsive two-column contact bar, measured header/bar clearances, and a scrollable height-limited menu.
 - Retested keyboard navigation at 320x600: final menu call link now visible above the contact bar. Media-content and assistive-technology verification remain open; no WCAG conformance claim.
 - Includes pending video-caption removal, preserving the accessible video label and action button.
+
+## November 9, 2026 — grouped navigation preview
+- Owner requested a cleaner page navigation preview. Desktop header groups therapy pages under Services and intake/funding under Getting Started; Locations, About, Contact and Call Now remain direct actions.
+- Mobile menu and footer retain their full existing link lists. Native disclosure controls support keyboard activation; Escape returns focus; outside click and leaving the group close it.
+- Regenerated all 11 pages and visually reviewed at 1440px; verified Escape behavior. Local preview only, not published.
+
+- Replaced text-character dropdown arrows with decorative SVG chevrons. Chevrons rotate upward on open; native summary state remains exposed to assistive technology. Local preview only.
+
+- Owner supplied a two-column dropdown reference. Recreated the pattern in Star Therapy branding: pastel icon squares, bronze headings, concise descriptions, cream panel and selected trigger styling. Services and Getting Started use grouped two-column panels; mobile links remain unchanged. Verified keyboard Escape and panel fit at 1181px. Preview only.
+Owner approved removing the public acknowledgment/signature section. The downloadable document remains unchanged. Local preview only.
