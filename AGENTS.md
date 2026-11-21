@@ -2,10 +2,10 @@
 
 ## Project and state
 - Repository: `https://github.com/aperez2313/StarTherapyV3`
-- Live website: `https://aperez2313.github.io/StarTherapyV3/`
+- Public domain (owner-confirmed, November 2026): `https://startherapysolutions.org/` (no www). Canonical tags, social previews, `sitemap.xml` and `robots.txt` use it via `SITE_URL` in `tools/build-pages.mjs`. GitHub Pages copy: `https://aperez2313.github.io/StarTherapyV3/`. startherapysolutions.org is served by the Cloudflare Worker `startherapyv3` (Workers static assets, settings in `wrangler.jsonc`). It publishes the repo folder, so anything internal must be listed in `.assetsignore`. Its GitHub check shows as failed, yet the site does update after merges to `main`.
 - CURRENT WORKING BRANCH: `feature/brand-v3-redesign` (already created and checked out in VS Code). DO NOT make another branch or modify `main` without explicit user approval.
 - Pages are generated: edit `tools/build-pages.mjs` (shared header, footer, call bar and every page's content) and run `node tools/build-pages.mjs .` from the repo root. Do not hand-edit the generated HTML, or the next run will overwrite it. Preview locally with `node tools/serve.mjs . 8123` at http://localhost:8123/StarTherapyV3/.
-- Site structure (Direction A, November 2026): static pages at `index.html` plus folder pages `speech-therapy/`, `occupational-therapy/`, `physical-therapy/`, `locations/`, `getting-started/`, `insurance-funding/`, `about/`, `contact/`, and `404.html`. Header, footer and mobile call bar are repeated in every page: change all of them together. Pages are plain HTML, never rendered by JavaScript. Use relative paths (the site lives under `/StarTherapyV3/`), except `404.html`, which uses `/StarTherapyV3/` absolute paths.
+- Site structure (Direction A, November 2026): static pages at `index.html` plus folder pages `speech-therapy/`, `occupational-therapy/`, `physical-therapy/`, `locations/`, `getting-started/`, `insurance-funding/`, `about/`, `contact/`, and `404.html`. Header, footer and mobile call bar are repeated in every page: change all of them together. Pages are plain HTML, never rendered by JavaScript. Use relative paths (they work on both startherapysolutions.org and the GitHub copy under `/StarTherapyV3/`), except `404.html`, which uses root-absolute `/` paths for startherapysolutions.org.
 - Owner review and testing before any merge/deployment. Never push or merge without permission.
 
 ## Sources and precedence

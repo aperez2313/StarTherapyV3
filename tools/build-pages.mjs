@@ -12,6 +12,10 @@ const TEL = 'tel:+13057786144';
 const MAPS = 'https://www.google.com/maps/place/Star+Therapy+Solutions/@25.9089664,-80.3101178,17z/data=!3m1!4b1!4m6!3m5!1s0x8f5029aaeeece963:0x18bcb885d2f2215!8m2!3d25.9089664!4d-80.3075375!16s%2Fg%2F11xh90c61_';
 const IG = 'https://www.instagram.com/startherapysolutions/';
 const LI = 'https://www.linkedin.com/company/star-therapy-solutions/';
+// Public address of the site. Used for canonical tags, social previews, sitemap.xml and robots.txt.
+const SITE_URL = 'https://startherapysolutions.org/';
+const SITEMAP_LASTMOD = '2026-11-21';
+const HHS_COMPLAINT = 'https://www.hhs.gov/hipaa/filing-a-complaint/index.html';
 const NEW_TAB = '<span class="sr-only"> (opens in a new tab)</span>';
 
 const NAV = [
@@ -71,8 +75,9 @@ function build(page) {
   <meta property="og:site_name" content="Star Therapy Solutions">
   <meta property="og:title" content="${page.title}">
   <meta property="og:description" content="${page.description}">
-  <meta property="og:url" content="https://aperez2313.github.io/StarTherapyV3/${page.slug === '404' ? '404.html' : page.slug ? page.slug + '/' : ''}">
-  <meta property="og:image" content="https://aperez2313.github.io/StarTherapyV3/assets/images/star-therapy-share-logo.png">
+  ${page.slug === '404' ? '' : `<link rel="canonical" href="${SITE_URL}${page.slug ? page.slug + '/' : ''}">
+  `}<meta property="og:url" content="${SITE_URL}${page.slug === '404' ? '404.html' : page.slug ? page.slug + '/' : ''}">
+  <meta property="og:image" content="${SITE_URL}assets/images/star-therapy-share-logo.png">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1100">
   <meta property="og:image:height" content="578">
@@ -80,7 +85,7 @@ function build(page) {
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="${page.title}">
   <meta name="twitter:description" content="${page.description}">
-  <meta name="twitter:image" content="https://aperez2313.github.io/StarTherapyV3/assets/images/star-therapy-share-logo.png">
+  <meta name="twitter:image" content="${SITE_URL}assets/images/star-therapy-share-logo.png">
   <meta name="twitter:image:alt" content="Star Therapy Solutions logo on a cream background">
   <link rel="icon" href="${p}startherapy.svg" type="image/svg+xml">
   <link rel="preload" href="${p}assets/fonts/fraunces-600-latin.woff2" as="font" type="font/woff2" crossorigin>
@@ -508,7 +513,7 @@ ${callSection(c)}`,
         <h4>Request an accounting and a paper copy</h4>
         <p>You may ask for an accounting of certain disclosures made during the six years before your request. Disclosures for treatment, payment, and health care operations, among other categories, generally are excluded. One accounting in a 12-month period is free; additional accountings may carry a reasonable cost-based fee. You may request a paper copy of this notice at any time, even if you agreed to receive it electronically.</p>
         <h4>Personal representative and complaints</h4>
-        <p>A person legally authorized to act for a patient, including a parent or guardian when permitted by law, may exercise applicable rights. We will verify authority and respect exceptions under laws governing minors. You may complain to us or the U.S. Department of Health and Human Services without retaliation.</p>
+        <p>A person legally authorized to act for a patient, including a parent or guardian when permitted by law, may exercise applicable rights. We will verify authority and respect exceptions under laws governing minors. You may complain to us or the <a href="${HHS_COMPLAINT}" target="_blank" rel="noopener noreferrer">U.S. Department of Health and Human Services${NEW_TAB}</a> without retaliation.</p>
         <h3>2 | Your choices</h3>
         <p>When permitted by law, you may tell us your preferences about sharing information with relatives, friends, or others involved in care or payment, and for disaster relief. If the patient cannot express a preference, we may act in the patient’s best interests using professional judgment. We generally need written authorization for most uses of psychotherapy notes, marketing activities requiring authorization, and sale of protected health information. Other uses or disclosures not described in this notice or allowed by law require written authorization, which may be revoked in writing except to the extent already relied upon.</p>
         <p>If we contact you for fundraising where permitted by law, you may choose not to receive further fundraising communications. Special rules apply to fundraising involving substance use disorder records protected by 42 CFR Part 2.</p>
@@ -532,7 +537,7 @@ ${callSection(c)}`,
         <p>We may change this notice and make revised terms effective for information we already maintain, as permitted by law. The current notice will be available upon request, posted at our office, and prominently available on any practice website describing our services.</p>
         <h3>7 | Questions or complaints</h3>
         <p>Star Therapy Solutions, LLC  |  Attention: Privacy Officer<br>6625 Miami Lakes Drive East, Suite 234, Miami Lakes, FL 33014<br>Phone: 305-778-6144  |  Email: startherapysolutions@gmail.com</p>
-        <p>You may also complain to the U.S. Department of Health and Human Services, Office for Civil Rights, 200 Independence Avenue SW, Washington, DC 20201; 1-877-696-6775; https://www.hhs.gov/hipaa/filing-a-complaint/index.html. We will not retaliate for filing a complaint.</p>
+        <p>You may also complain to the U.S. Department of Health and Human Services, Office for Civil Rights, 200 Independence Avenue SW, Washington, DC 20201; 1-877-696-6775; <a href="${HHS_COMPLAINT}" target="_blank" rel="noopener noreferrer">hhs.gov/hipaa/filing-a-complaint${NEW_TAB}</a>. We will not retaliate for filing a complaint.</p>
       </div>
     </section>
 
@@ -565,7 +570,9 @@ for (const page of pages) {
   writeFileSync(join(dir, page.file || 'index.html'), build(page));
 }
 
-// 404 lives at the site root but is served for any missing path, so it uses absolute project paths.
+// 404 lives at the site root but is served for any missing path, so it uses root-absolute paths.
+// They match startherapysolutions.org (Cloudflare serves it via not_found_handling in wrangler.jsonc).
+// On the GitHub Pages copy under /StarTherapyV3/ this page loads without styles; the .org site is the public one.
 const notFound = build({
   slug: '404', depth: 0,
   title: 'Page not found | Star Therapy Solutions',
@@ -578,8 +585,20 @@ const notFound = build({
         <div class="actions"><a class="btn ghost" href="./">Go to the homepage</a>${c.call('Call ' + PHONE)}</div>
       </div>
     </section>`,
-}).replaceAll('href="speech-therapy/', 'href="/StarTherapyV3/speech-therapy/');
+});
 writeFileSync(join(ROOT, '404.html'), notFound
-  .replace(/(href|src)="(?!https?:|tel:|#|\/)([^"]*)"/g, (m, attr, path) => `${attr}="/StarTherapyV3/${path === './' ? '' : path}"`));
+  .replace(/(href|src)="(?!https?:|tel:|#|\/)([^"]*)"/g, (m, attr, path) => `${attr}="/${path === './' ? '' : path}"`));
 
-console.log('wrote', pages.length, 'pages + 404.html');
+// sitemap.xml and robots.txt are generated too, so their URLs always match SITE_URL.
+writeFileSync(join(ROOT, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${pages.map((pg) => `  <url><loc>${SITE_URL}${pg.slug ? pg.slug + '/' : ''}</loc><lastmod>${SITEMAP_LASTMOD}</lastmod></url>`).join('\n')}
+</urlset>
+`);
+writeFileSync(join(ROOT, 'robots.txt'), `User-agent: *
+Allow: /
+
+Sitemap: ${SITE_URL}sitemap.xml
+`);
+
+console.log('wrote', pages.length, 'pages + 404.html + sitemap.xml + robots.txt');

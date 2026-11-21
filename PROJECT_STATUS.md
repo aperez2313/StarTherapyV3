@@ -361,3 +361,14 @@ Owner approved removing the public acknowledgment/signature section. The downloa
 
 ## November 10, 2026 — video button spacing
 - Added 16px between the homepage video and its action button following owner screenshot feedback. Local preview, not published.
+
+## November 21, 2026: public domain metadata
+- Owner confirmed `startherapysolutions.org` (no www) as the public domain. `SITE_URL` in `tools/build-pages.mjs` now drives canonical tags (new, every page except 404), og:url, og:image, twitter:image, and the generated `sitemap.xml` and `robots.txt`.
+- Privacy page: both HHS complaint mentions now link to hhs.gov/hipaa/filing-a-complaint.
+- Audit of www.startherapysolutions.org (Nov 21): all 10 pages, desktop and mobile menus, call links, video and NPP download work; content matches the GitHub copy. No-www address loads (owner-confirmed).
+- Hosting: .org is the Cloudflare Worker `startherapyv3` serving the repo folder as static assets. Its GitHub check shows failed, but merges to `main` do reach the site.
+- Fixed: missing pages returned a blank 404. Added `wrangler.jsonc` (Cloudflare's generated config plus `not_found_handling: "404-page"`) and switched `404.html` to root-absolute paths. Tested with `wrangler dev`.
+- Fixed: the site was publishing AGENTS.md, PROJECT_STATUS.md, tools/ and wrangler.jsonc. `.assetsignore` now keeps them off the site.
+- Note: `404.html` on the GitHub Pages copy now loads unstyled; .org is the public site.
+- TODO (owner): Cloudflare Web Analytics beacon is injected on .org from the Cloudflare dashboard. Needs owner review per the analytics rule; keep or turn off.
+- TODO (owner, outside the repo): update the LinkedIn company page Website field from startherapysolutions.my.canva.site to https://startherapysolutions.org/.

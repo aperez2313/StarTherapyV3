@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://aperez2313.github.io/StarTherapyV3/sitemap.xml
+Sitemap: https://startherapysolutions.org/sitemap.xml
