@@ -173,7 +173,7 @@ const pages = [
         <div class="stack">
           <p class="eyebrow">Pediatric therapy · Miami Lakes, Florida</p>
           <h1 id="hero-title">Helping Little Stars Reach Their Full Potential.</h1>
-          <p class="hero-subtitle">Pediatric Speech, Occupational and Physical Therapy.</p>
+          <p class="hero-subtitle">Pediatric Speech, Occupational, and Physical Therapy.</p>
           <p class="lede">Personalized speech, occupational, and physical therapy that comes to your child’s school or daycare, with services also available at our Miami Lakes office.</p>
           <div class="actions">${c.call('Call ' + PHONE)}<a class="btn ghost" href="${c.link('contact')}">Contact details</a></div>
           <p class="note">Office visits by appointment · English &amp; Spanish</p>
