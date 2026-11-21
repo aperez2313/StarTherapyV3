@@ -4,3 +4,5 @@ design-reference/
 /StarTherapy_Codex_Ready_Handoff/
 # Original phone video remains local; the website uses the MP4 derivative.
 /IMG_2813.mov
+# Local Cloudflare dev state.
+.wrangler/

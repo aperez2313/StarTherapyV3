@@ -1,0 +1,15 @@
+# Repo files that must not be published on startherapysolutions.org.
+# Cloudflare uploads the whole repo folder as the site (wrangler.jsonc assets.directory = ".").
+.git
+.gitignore
+.assetsignore
+wrangler.jsonc
+AGENTS.md
+PROJECT_STATUS.md
+*.md
+tools/
+design-reference/
+page-screenshots/
+page-screenshots.zip
+node_modules/
+.wrangler/

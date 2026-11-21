@@ -570,7 +570,9 @@ for (const page of pages) {
   writeFileSync(join(dir, page.file || 'index.html'), build(page));
 }
 
-// 404 lives at the site root but is served for any missing path, so it uses absolute project paths.
+// 404 lives at the site root but is served for any missing path, so it uses root-absolute paths.
+// They match startherapysolutions.org (Cloudflare serves it via not_found_handling in wrangler.jsonc).
+// On the GitHub Pages copy under /StarTherapyV3/ this page loads without styles; the .org site is the public one.
 const notFound = build({
   slug: '404', depth: 0,
   title: 'Page not found | Star Therapy Solutions',
@@ -583,9 +585,9 @@ const notFound = build({
         <div class="actions"><a class="btn ghost" href="./">Go to the homepage</a>${c.call('Call ' + PHONE)}</div>
       </div>
     </section>`,
-}).replaceAll('href="speech-therapy/', 'href="/StarTherapyV3/speech-therapy/');
+});
 writeFileSync(join(ROOT, '404.html'), notFound
-  .replace(/(href|src)="(?!https?:|tel:|#|\/)([^"]*)"/g, (m, attr, path) => `${attr}="/StarTherapyV3/${path === './' ? '' : path}"`));
+  .replace(/(href|src)="(?!https?:|tel:|#|\/)([^"]*)"/g, (m, attr, path) => `${attr}="/${path === './' ? '' : path}"`));
 
 // sitemap.xml and robots.txt are generated too, so their URLs always match SITE_URL.
 writeFileSync(join(ROOT, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>

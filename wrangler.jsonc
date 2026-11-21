@@ -1,0 +1,16 @@
+// Cloudflare Workers settings for startherapysolutions.org.
+// Matches the config Cloudflare generated for the "startherapyv3" Worker, plus not_found_handling
+// so missing pages show 404.html instead of an empty response.
+// Files listed in .assetsignore are kept off the public site.
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "startherapyv3",
+  "compatibility_date": "2026-11-19",
+  "observability": {
+    "enabled": true
+  },
+  "assets": {
+    "directory": ".",
+    "not_found_handling": "404-page"
+  }
+}
