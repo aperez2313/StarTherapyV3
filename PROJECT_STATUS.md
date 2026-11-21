@@ -361,3 +361,10 @@ Owner approved removing the public acknowledgment/signature section. The downloa
 
 ## November 10, 2026 — video button spacing
 - Added 16px between the homepage video and its action button following owner screenshot feedback. Local preview, not published.
+
+## November 21, 2026: public domain metadata
+- Owner confirmed `startherapysolutions.org` (no www) as the public domain. `SITE_URL` in `tools/build-pages.mjs` now drives canonical tags (new, every page except 404), og:url, og:image, twitter:image, and the generated `sitemap.xml` and `robots.txt`.
+- Privacy page: both HHS complaint mentions now link to hhs.gov/hipaa/filing-a-complaint.
+- TODO: confirm how startherapysolutions.org is served. The repo has no `CNAME`, and the connected Cloudflare Workers build ("startherapyv3") fails instantly on every push, so .org may not be receiving updates.
+- TODO: if the site moves to the root of .org, change `404.html`'s hard-coded `/StarTherapyV3/` paths in the build script.
+- TODO (owner, outside the repo): update the LinkedIn company page Website field from startherapysolutions.my.canva.site to https://startherapysolutions.org/.
